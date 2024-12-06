@@ -1,8 +1,10 @@
-import { About, BecomePartner, Blog, CartHome, ContactUs, Error, HomeLayout, Landing, Login, Orders, Register, Services} from './pages';
+import { About, BecomePartner, CartHome, ContactUs, Error, HomeLayout, Landing, Login, Orders, Register, Services} from './pages';
 import { RouterProvider, createBrowserRouter } from 'react-router-dom';
 import ErrorElement from './components/ErrorElement';
 import {loader as landingLoader} from './pages/Landing';
-// import {Cart} from '../src/components/Cart';
+// import Courses from './pages/Courses';
+import AddCart from './components/AddCart';
+import CoursesListCart from './components/CoursesListCart';
 
 
 const router = createBrowserRouter([
@@ -17,19 +19,24 @@ const router = createBrowserRouter([
         loader:landingLoader,
         errorElement:ErrorElement,
       },
-     
       {
         path: 'services',
         element: <Services />,
       },
       {
+        path: 'courses',
+        element: <courses/>,
+      },
+      {
+        path: 'cart',
+        element: <AddCart/>,
+      },
+
+      {
         path: 'becomePartner',
         element: <BecomePartner />,
       },
-      // {
-      //   path: 'cart',
-      //   element: <Cart />,
-      // },
+
       { 
         path: 'about', 
         element: <About /> 
@@ -43,8 +50,8 @@ const router = createBrowserRouter([
         element: <Orders />,
       },
       {
-        path: 'blog',
-        element: <Blog/>
+        path: 'coursesListCart',
+        element: <CoursesListCart/>
       },
       {
         path:'cartHome',

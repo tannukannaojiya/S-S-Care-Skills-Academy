@@ -1,12 +1,7 @@
 // src/components/CourseCard.jsx
 import React from 'react';
-import { useNavigate } from "react-router-dom";
 
-const Courses = (addCart) => {
-    const navigate = useNavigate();
-    const handleAddCart = (addCart) =>{
-        navigate("/addCart");
-      }
+const CourseCard = () => {
   return (
     <div className="max-w-md mx-auto bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-all">
       {/* Video */}
@@ -23,7 +18,6 @@ const Courses = (addCart) => {
       <div className="p-4">
         <h2 className="text-lg font-semibold text-gray-800">Course Name</h2>
         <p className="text-gray-600 mt-2">Price: ₹999</p>
-        <p className="text-gray-600 mt-2">Total Lecture: 18</p>
 
         {/* Features */}
         <ul className="mt-4 text-sm text-gray-600 space-y-2">
@@ -37,7 +31,7 @@ const Courses = (addCart) => {
         </ul>
 
         {/* Add to Cart Button */}
-        <button onClick={() => handleAddCart(addCart)} className="mt-4 bg-blue-500 text-white px-4 py-2 w-full rounded hover:bg-blue-600">
+        <button className="mt-4 bg-blue-500 text-white px-4 py-2 w-full rounded hover:bg-blue-600">
           Add to Cart
         </button>
       </div>
@@ -45,4 +39,4 @@ const Courses = (addCart) => {
   );
 };
 
-export default Courses;
+export default CourseCard;

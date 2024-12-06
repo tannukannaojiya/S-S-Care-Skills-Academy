@@ -2,7 +2,7 @@ import React from "react";
 
 const TeamCard = ({ image, name, profile, details }) => {
   return (
-    <div className="bg-white shadow-lg rounded-lg overflow-hidden max-w-sm mx-auto sm:mx-4 my-4 transform transition-transform hover:scale-105 hover:shadow-xl">
+    <div id="#about" className="bg-white shadow-lg rounded-lg overflow-hidden max-w-sm mx-auto sm:mx-4 my-4 transform transition-transform hover:scale-105 hover:shadow-xl">
       <div className="overflow-hidden">
         <img
           className="w-full h-64 object-cover transform transition-all duration-300 hover:grayscale"

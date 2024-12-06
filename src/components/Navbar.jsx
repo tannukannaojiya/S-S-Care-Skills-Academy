@@ -1,85 +1,35 @@
-import { BsCart3, BsMoonFill, BsSunFill } from 'react-icons/bs';
-import { FaBarsStaggered } from 'react-icons/fa6';
-import { NavLink } from 'react-router-dom';
-import NavLinks from './NavLinks';
-import { useState, useEffect } from 'react';
+// src/components/Navbar.jsx
+import React, { useState } from "react";
 
-const themes = {
-    winter: 'winter',
-    dracula: 'dracula'
-}
-//winter
+const Navbar = ({ setSelectedCategory }) => {
+  const menus = [
+    "AC",
+    "Washing Machine",
+    "Car",
+    "Automobile",
+    "Bike",
+    "Scooter",
+  ];
 
-const getThemeFromLocalStorage = ()=>{
-    return localStorage.getItem('theme') || themes.winter;
-};
-
-
-
-const Navbar = () => {
-    const [theme, setTheme] = useState(getThemeFromLocalStorage());
-    const handleTheme = () =>{
-        const {winter, dracula} = themes;
-        const newTheme = theme === winter ? winter : winter;
-        // document.documentElement.setAttribute('data-theme', theme);
-        setTheme(newTheme);
-    }
-
-
-useEffect(()=>{
-    document.documentElement.setAttribute('data-theme', theme);
-    localStorage.setItem('theme', theme);
-},[theme]);
-
+  const handleCategory = (menu) => {
+    setSelectedCategory(menu);
+  };
 
   return (
-    <nav className='bg-base-200'>
-        <div className='navbar align-element'>
-            <div className='navbar-start'>
-                {/* Title */}
-                <NavLink to='/' className='hidden lg:flex btn btn-primary text-3xl items-center'>
-                    <img className='h-12' src='https://pbs.twimg.com/profile_images/1696214860072189952/ZrF4aZ0q_400x400.jpg' alt='logo'/>
-                </NavLink>
-                {/* DROPDOWN */}
-                <div className='dropdown'>
-                    <label tabIndex={0} className='btn btn-ghost lg:hidden'>
-                    <FaBarsStaggered className='h-6 w-6' />
-                    </label>
-                    <ul  tabIndex={0}
-                    className='menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-200 rounded-box w-52'>
-                        <NavLinks/>
-                    </ul>
-                </div>
-                </div>
-                <div className='navbar-center hidden lg:flex'>
-                    <ul className='menu menu-horizontal'><NavLinks/> </ul>
-                </div>
-                <div className='navbar-end'>
-                    <label className='swap swap-rotate'>
-                        {/* this hidden checkbox controls the state */}
-                        <input type='checkbox' onChange={handleTheme} />
-                        {/* sun icon */}
-                        <BsSunFill className='swap-on h-4 w-4'/>
-                        {/* moon icon */}
-                        <BsMoonFill className='swap-off h-4 w-4'/>
-                    </label>
-                </div>
-
-                <div className='navbar-center align-element lg:flex'>
-                   {/* Theme Icons */}
-                   {/* Cart Link */}
-                   <NavLink to='cart' className='btn btn-ghost btn-circle btn-md ml-4'>
-                    <div className='indicator '>
-                    <BsCart3 className='h-6 w-6 '/>
-                    <span className='badge badge-sm badge-primary indicator-item'>
-                        8
-                    </span>
-                    </div>
-                   </NavLink>
-                </div>    
-        </div>
-    </nav>
-  )
-}
+    <div className="flex justify-center items-center h-20 w-2/3 bg-blue-400 ml-60 rounded-lg text-white">
+      <nav className="flex  gap-6 text-lg font-semibold">
+        {menus.map((menu, index) => (
+          <div
+            key={index}
+            className="px-4 py-4 rounded cursor-pointer transition duration-300 hover:bg-blue-500"
+            onClick={() => handleCategory(menu)}
+          >
+            {menu}
+          </div>
+        ))}
+      </nav>
+    </div>
+  );
+};
 
 export default Navbar;

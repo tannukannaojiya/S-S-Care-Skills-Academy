@@ -1,6 +1,6 @@
 import React from "react";
 
-const Contact = () => {
+const ContactUs = () => {
   return (
     <>
       <section className="relative z-10 overflow-hidden bg-white py-20 dark:bg-dark lg:py-[120px]">
@@ -981,7 +981,7 @@ const Contact = () => {
   );
 };
 
-export default Contact;
+export default ContactUs;
 
 const ContactTextArea = ({ row, placeholder, name, defaultValue }) => {
   return (
