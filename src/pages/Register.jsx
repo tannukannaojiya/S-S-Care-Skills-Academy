@@ -24,10 +24,7 @@ const Register = () => {
             login
           </Link>
         </p>
-
-
         </Form>
-
     </section>
   )
 }

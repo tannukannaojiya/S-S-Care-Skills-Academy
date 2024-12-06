@@ -2,7 +2,7 @@ import React from 'react'
 
 const WhoWeAre = () => {
   return (
-    <div className="bg-gray-100 min-h-screen flex flex-col justify-center items-center p-5">
+    <div className="bg-gray-100 min-h-screen flex flex-col justify-center items-center py-5">
     {/* Card Container */}
     <div className="bg-white shadow-lg rounded-lg w-full md:w-10/12 lg:w-8/12 p-8">
       {/* WHO WE ARE Section */}

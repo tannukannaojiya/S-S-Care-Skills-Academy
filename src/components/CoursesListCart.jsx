@@ -1,4 +1,5 @@
 import React from "react";
+import acLogo from "../assets/acLogo.png";
 
 const CoursesListCart = () => {
   return (
@@ -27,7 +28,7 @@ const CoursesListCart = () => {
               <tr>
                 <td className="border border-gray-300 px-4 py-2">
                   <img
-                    src="https://via.placeholder.com/50"
+                    src={acLogo}
                     alt="Course"
                     className="w-12 h-12 object-cover"
                   />

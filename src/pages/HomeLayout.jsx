@@ -13,26 +13,14 @@ import Footer from "../components/Footer";
 // import HeroCarousel from "../components/HeroCarousel";
 import Nav from "../components/Nav";
 import HeadHeroSection from "../components/HeadHeroSection";
+import CmLogoSection from "../components/CmLogoSection";
 
 const HomeLayout = () => {
   return (
     <>
     <Header/>
     <Nav/>
-    <HeadHeroSection/>
-    <section className="align-element py-20"><Outlet/></section>
-    
-    {/* <NavLinks/> */}
-    {/* <NavLink/> */}
-   
-    {/* <HeroSection/> */}
-    <Services/>
-    <HomePage/>
-    <WhoWeAre/>
-
-    <CustomizedProjectReport/>
-    <DetailedProjectReport/>
-    {/* <Scroller/> */}
+    <section className=" py-5"><Outlet/></section>
     
       <Footer/>
     </>

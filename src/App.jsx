@@ -1,8 +1,7 @@
-import { About, BecomePartner, CartHome, ContactUs, Error, HomeLayout, Landing, Login, Orders, Register, Services} from './pages';
+import { About, BecomePartner, CartHome, ContactUs, Courses, Error, HomeLayout, Landing,  Login, Orders, Register, Services} from './pages';
 import { RouterProvider, createBrowserRouter } from 'react-router-dom';
 import ErrorElement from './components/ErrorElement';
 import {loader as landingLoader} from './pages/Landing';
-// import Courses from './pages/Courses';
 import AddCart from './components/AddCart';
 import CoursesListCart from './components/CoursesListCart';
 
@@ -16,27 +15,25 @@ const router = createBrowserRouter([
       {
         index: true,
         element: <Landing />,
-        loader:landingLoader,
         errorElement:ErrorElement,
       },
+      // {
+      //   path: '/services',
+      //   element: <Services />,
+      // },
       {
-        path: 'services',
-        element: <Services />,
+        path: '/courses/:id',
+        element: <Courses/>
       },
-      {
-        path: 'courses',
-        element: <courses/>,
-      },
-      {
+       {
         path: 'cart',
-        element: <AddCart/>,
-      },
-
+        element: <CoursesListCart/>,
+        
+       },
       {
         path: 'becomePartner',
         element: <BecomePartner />,
       },
-
       { 
         path: 'about', 
         element: <About /> 
@@ -45,20 +42,24 @@ const router = createBrowserRouter([
         path: 'contactUs',
         element: <ContactUs />,
       },
+      
       {
         path: 'orders',
         element: <Orders />,
       },
-      {
-        path: 'coursesListCart',
-        element: <CoursesListCart/>
-      },
+      // {
+      //   path: 'coursesListCart',
+      //   element: <CoursesListCart/>
+      // },
       {
         path:'cartHome',
         element:<CartHome/>
       }
     ],
+    
   },
+  
+
   {
     path: '/login',
     element: <Login />,
