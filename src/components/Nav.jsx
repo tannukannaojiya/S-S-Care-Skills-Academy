@@ -24,12 +24,7 @@ const Nav = () => {
             <a href="about" className="hover:text-gray-400">
               About
             </a>
-            {/* <a href="services" className="hover:text-gray-400">
-              Services
-            </a> */}
-            {/* <a href="/courses" className="hover:text-gray-400">
-              Courses
-            </a> */}
+            
             <Link to="services" smooth={true} duration={500} className="hover:text-gray-400">
             Services
           </Link>
@@ -42,20 +37,15 @@ const Nav = () => {
             <a href="csr" className="hover:text-gray-400">
               CSR
             </a>
-            {/* <a href="blog" className="hover:text-gray-400">
-              Blog
-            </a> */}
-            <a href="careersUs" className="hover:text-gray-400">
+           
+            <a href="careersUs" className="hover:text-gray-400 hover:cursor-pointer">
               Careers
             </a>
-            <a href="contactUs" className="hover:text-gray-400">
+            <a href="contactUs" className="hover:text-gray-400 hover:cursor-pointer">
               Contact Us
             </a>
             
-            {/* <a href="cart" className="hover:text-gray-400">
-            Cart
-            </a> */}
-            <a href="becomePartner" className="hover:text-gray-400">
+            <a href="becomePartner" className="hover:text-gray-400 hover:cursor-pointer">
             Become Partner
             </a>
           </div>
