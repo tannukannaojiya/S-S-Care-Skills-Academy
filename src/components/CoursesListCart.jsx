@@ -28,7 +28,7 @@ const CoursesListCart = () => {
               <tr>
                 <td className="border border-gray-300 px-4 py-2">
                   <img
-                    src={acLogo}
+                    src="https://png.pngtree.com/thumb_back/fw800/background/20240403/pngtree-auto-mechanic-working-in-garage-repair-service-image_15647939.jpg"
                     alt="Course"
                     className="w-12 h-12 object-cover"
                   />
@@ -37,13 +37,13 @@ const CoursesListCart = () => {
                 <td className="border border-gray-300 px-4 py-2 text-center">
                   🗑️
                 </td>
-                <td className="border border-gray-300 px-4 py-2">₹2000</td>
+                <td className="border border-gray-300 px-4 py-2">₹000</td>
               </tr>
               {/* Row 3 */}
               <tr>
                 <td className="border border-gray-300 px-4 py-2">
                   <img
-                    src="https://via.placeholder.com/50"
+                    src="https://i.pinimg.com/originals/af/84/2b/af842b91bec8eff44bd3b16b321b95be.png"
                     alt="Course"
                     className="w-12 h-12 object-cover"
                   />
@@ -52,21 +52,21 @@ const CoursesListCart = () => {
                 <td className="border border-gray-300 px-4 py-2 text-center">
                   🗑️
                 </td>
-                <td className="border border-gray-300 px-4 py-2">₹2000</td>
+                <td className="border border-gray-300 px-4 py-2">₹000</td>
               </tr>
               {/* Subtotal Row */}
               <tr className="bg-gray-100">
                 <td colSpan="3" className="border border-gray-300 px-4 py-2 text-right">
                   SUBTOTAL (TAX INCL.)
                 </td>
-                <td className="border border-gray-300 px-4 py-2">₹2340</td>
+                <td className="border border-gray-300 px-4 py-2">₹000</td>
               </tr>
               {/* Total Row */}
               <tr className="bg-gray-200 font-bold">
                 <td colSpan="3" className="border border-gray-300 px-4 py-2 text-right">
                   TOTAL (TAX INCL.)
                 </td>
-                <td className="border border-gray-300 px-4 py-2">₹2300</td>
+                <td className="border border-gray-300 px-4 py-2">₹000</td>
               </tr>
             </tbody>
           </table>

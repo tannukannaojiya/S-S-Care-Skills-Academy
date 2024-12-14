@@ -37,7 +37,7 @@ const Footer = () => {
           <h2 className="text-xl font-semibold mb-4">Follow Us</h2>
           <div className="flex space-x-4 text-2xl">
             <a href="https://www.facebook.com/sscareskillsacademynoida" target="_blank" rel="noopener noreferrer" className="hover:text-blue-600"><FaFacebook /></a>
-            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="hover:text-blue-400"><FaTwitter /></a>
+            <a href="https://x.com/careskillsnoida?s=11&t=sOFQ7RqFa8PA7UJcCwwIQA" target="_blank" rel="noopener noreferrer" className="hover:text-blue-400"><FaTwitter /></a>
             <a href="https://www.instagram.com/sscareskillsacademy/" target="_blank" rel="noopener noreferrer" className="hover:text-pink-500"><FaInstagram /></a>
             <a href="https://www.linkedin.com/company/sscareskillsacademy/" target="_blank" rel="noopener noreferrer" className="hover:text-blue-700"><FaLinkedin /></a>
             <a href="https://www.youtube.com/@sscareskillsacademy/videos" target="_blank" rel="noopener noreferrer" className="hover:text-red-500"><FaYoutube /></a>

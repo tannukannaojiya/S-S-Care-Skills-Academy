@@ -1,18 +1,17 @@
-import { NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const links = [
     {id:1, url:'/', text:'home'},
     {id:2, url:'about', text:'about'},
-    {id:3, url:'services', text:'services'},
-    {id:4, url:'courses', text:'courses'},
-    {id:4, url:'online courses', text:'online courses'},
+    {id:3, url:'courses', text:'courses'},
+    {id:4, url:'/', text:'online courses'},
     {id:5, url:'CSR', text:'csr'},
-    {id:5, url:'partner with us', text:'partner with us'},
-    {id:5, url:'cart', text:'cart'},
-    {id:6, url:'blog', text:'blog'},
-    {id:6, url:'career', text:'career'},
-    {id:7, url:'become partner', text:'become partner'},
-    {id:8, url:'contactUs', text:'contactUs'}
+    {id:6, url:'partner with us', text:'partner with us'},
+    {id:7, url:'cart', text:'cart'},
+    {id:8, url:'blog', text:'blog'},
+    {id:9, url:'career', text:'career'},
+    {id:10, url:'become partner', text:'become partner'},
+    {id:11, url:'contactUs', text:'contactUs'}
 ]
 
 const NavLinks = () => {
@@ -23,7 +22,7 @@ const NavLinks = () => {
             const {id, url, text} = link;
             return(
                 <li key={id}>
-                    <NavLink className='capitalize' to={url}>{text}</NavLink>
+                    <NavLinks className='capitalize' to={url}>{text}</NavLinks>
                 </li>
             )
         })

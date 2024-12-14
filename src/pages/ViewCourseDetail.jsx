@@ -1,9 +1,16 @@
 // src/components/CourseCard.jsx
 import React from 'react';
 
-const CourseCard = () => {
+const ViewCourseDetail = () => {
+  const navigate = useNavigate();
+
+  const handleAddToCart = () => {
+    navigate('/cart'); // Navigate to the cart page
+    window.scrollTo({ top: 0, behavior: 'smooth' }); // Scroll to the top
+  }
+
   return (
-    <div className="max-w-md mx-auto bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-all">
+    <div className = "max-w-md mx-auto bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-all">
       {/* Video */}
       <iframe
         className="w-full h-48"
@@ -32,6 +39,7 @@ const CourseCard = () => {
 
         {/* Add to Cart Button */}
         <button className="mt-4 bg-blue-500 text-white px-4 py-2 w-full rounded hover:bg-blue-600">
+        onClick={handleAddToCart}
           Add to Cart
         </button>
       </div>
@@ -39,4 +47,4 @@ const CourseCard = () => {
   );
 };
 
-export default CourseCard;
+export default ViewCourseDetail;

@@ -23,10 +23,10 @@ const Nav = () => {
             <a href="about" className="hover:text-gray-400">
               About
             </a>
-            <a href="services" className="hover:text-gray-400">
+            {/* <a href="services" className="hover:text-gray-400">
               Services
-            </a>
-            <a href="courses" className="hover:text-gray-400">
+            </a> */}
+            <a href="/courses" className="hover:text-gray-400">
               Courses
             </a>
             <a href="online-courses" className="hover:text-gray-400">
@@ -93,9 +93,9 @@ const Nav = () => {
           <a href="#about" className="block px-4 py-2 hover:bg-gray-600">
             About
           </a>
-          <a href="#services" className="block px-4 py-2 hover:bg-gray-600">
+          {/* <a href="#services" className="block px-4 py-2 hover:bg-gray-600">
             Services
-          </a>
+          </a> */}
           <a href="#courses" className="block px-4 py-2 hover:bg-gray-600">
             Courses
           </a>

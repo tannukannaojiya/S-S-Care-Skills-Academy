@@ -10,48 +10,58 @@ const CustomizedProjectReport = () => {
         {/* Left Section */}
         <div className="w-full md:w-1/2 pr-5">
           <h2 className="text-xl md:text-2xl font-bold text-gray-700 mb-4">
-            Why Choose Us
+            Benefits For Joining Us
           </h2>
           <div className="space-y-8">
             {/* Item 1 */}
             <div>
               <div className="flex items-center space-x-3">
-                <div className="text-gray-500 text-xl">✅</div>
+                <div className="text-gray-500 text-xl">🛠️</div>
                 <h3 className="text-lg md:text-xl font-semibold text-gray-800">
                   Fully Customized
                 </h3>
               </div>
               <p className="text-gray-600 mt-2">
-                Customized Bankable Project report to meet all financial
-                requirements.
+              Tailors training programs to meet individual needs, allowing students to learn at their own pace and focus on specific career goals.
               </p>
               <hr className="mt-4 border-gray-300" />
             </div>
             {/* Item 2 */}
             <div>
               <div className="flex items-center space-x-3">
-                <div className="text-gray-500 text-xl">⏰</div>
+                <div className="text-gray-500 text-xl">🚀</div>
                 <h3 className="text-lg md:text-xl font-semibold text-gray-800">
-                  Quick Delivery
+                  Innovative Training
                 </h3>
               </div>
               <p className="text-gray-600 mt-2">
-                You will get customized reports from professionals in minimum
-                time.
+              Faculty provides advanced teaching methodologies, enhancing practical knowledge and skills for real-world applications.
+              </p>
+              <hr className="mt-4 border-gray-300" />
+            </div>
+            {/* Item 1 */}
+            <div>
+              <div className="flex items-center space-x-3">
+                <div className="text-gray-500 text-xl">💼</div>
+                <h3 className="text-lg md:text-xl font-semibold text-gray-800">
+                  Job Oriented
+                </h3>
+              </div>
+              <p className="text-gray-600 mt-2">
+              Training focuses on equipping students with industry-relevant skills, ensuring career readiness.
               </p>
               <hr className="mt-4 border-gray-300" />
             </div>
             {/* Item 3 */}
             <div>
               <div className="flex items-center space-x-3">
-                <div className="text-gray-500 text-xl">📞</div>
+                <div className="text-gray-500 text-xl">📜</div>
                 <h3 className="text-lg md:text-xl font-semibold text-gray-800">
-                  End to End Support
+                Government Certification
                 </h3>
               </div>
               <p className="text-gray-600 mt-2">
-                You can reach our support team via phone or email throughout the
-                report development life cycle.
+              Recognized certifications boost credibility, opening opportunities for government and private sector employment.
               </p>
               <hr className="mt-4 border-gray-300" />
             </div>
@@ -64,7 +74,7 @@ const CustomizedProjectReport = () => {
         {/* Right Section */}
         <div className="w-full md:w-1/2 pl-5">
           <h2 className="text-xl md:text-2xl font-bold text-gray-700 mb-4">
-            Benefits For Joining Us
+          Why Choose Us
           </h2>
           <div className="space-y-8">
             {[1, 2, 3, 4, 5].map((item, idx) => (
@@ -73,11 +83,11 @@ const CustomizedProjectReport = () => {
                   <div className="text-lg font-bold mr-3 text-green-600">{item}.</div>
                   <p className="text-gray-600">
                     {[
-                      "A team of highly experienced professionals comprising of Chartered Accountants Company Secretary.",
-                      "Detailed technical and viability study reports for all major sectors of the economy, like food processing.",
-                      "Project reports and finance proposals as per industry parameters and accepted by all financial institutions.",
-                      "Detailed knowledge and guidance of various subsidy schemes and bank schemes.",
-                      "Providing complete knowledge of the loan process, loan file preparation, and assistance during the processing of the loan.",
+                      "Corporate Training customized training programs to enhance employee skills, productivity, and organizational performance in corporate settings.",
+                      "Industry-Specific tailored training to meet the unique needs of various industries, boosting relevance and expertise.",
+                      "Educational Programs comprehensive programs designed to provide knowledge and skills, promoting personal and professional development.",
+                      "Physical Programs fitness and wellness programs designed to improve physical health, strength, and overall well-being.",
+                      "Expertise and Experience benefit from professional trainers with extensive industry knowledge and proven track records.",
                     ][idx]}
                   </p>
                 </div>
