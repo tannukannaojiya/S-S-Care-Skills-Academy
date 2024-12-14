@@ -1,4 +1,5 @@
 import React from 'react';
+import { Element } from 'react-scroll';
 // import Hero from '../components/Hero';
 import HeadHeroSection from '../components/HeadHeroSection';
 import Services from './Services';
@@ -19,8 +20,14 @@ const Landing = () => {
   return (
     <div className='-mt-5'>
       <HeadHeroSection/>
-      <Services/>
-      <HomePage/>
+      {/* <Services/>
+      <HomePage/> */}
+      <Element name="services">
+        <Services />
+      </Element>
+      <Element name="courses">
+        <HomePage />
+      </Element>
       <WhoWeAre/>
       <CustomizedProjectReport/>
       <CmLogoSection/>

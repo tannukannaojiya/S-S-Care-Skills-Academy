@@ -2,16 +2,17 @@ import { Link } from "react-router-dom";
 
 const links = [
     {id:1, url:'/', text:'home'},
-    {id:2, url:'about', text:'about'},
-    {id:3, url:'courses', text:'courses'},
-    {id:4, url:'/', text:'online courses'},
-    {id:5, url:'CSR', text:'csr'},
-    {id:6, url:'partner with us', text:'partner with us'},
-    {id:7, url:'cart', text:'cart'},
-    {id:8, url:'blog', text:'blog'},
-    {id:9, url:'career', text:'career'},
-    {id:10, url:'become partner', text:'become partner'},
-    {id:11, url:'contactUs', text:'contactUs'}
+    {id:2, url:'services', text:'services'},
+    {id:3, url:'about', text:'about'},
+    {id:4, url:'courses', text:'courses'},
+    {id:5, url:'/', text:'online courses'},
+    {id:6, url:'CSR', text:'csr'},
+    {id:7, url:'partner with us', text:'partner with us'},
+    {id:8, url:'cart', text:'cart'},
+    {id:9, url:'blog', text:'blog'},
+    {id:10, url:'career', text:'career'},
+    {id:11, url:'become partner', text:'become partner'},
+    {id:12, url:'contactUs', text:'contactUs'}
 ]
 
 const NavLinks = () => {

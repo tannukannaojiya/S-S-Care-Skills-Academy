@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-scroll';
  import AcademyLogo from "../assets/AcademyLogo.png";
 <assets />
 const Nav = () => {
@@ -26,9 +27,15 @@ const Nav = () => {
             {/* <a href="services" className="hover:text-gray-400">
               Services
             </a> */}
-            <a href="/courses" className="hover:text-gray-400">
+            {/* <a href="/courses" className="hover:text-gray-400">
               Courses
-            </a>
+            </a> */}
+            <Link to="services" smooth={true} duration={500} className="hover:text-gray-400">
+            Services
+          </Link>
+          <Link to="courses" smooth={true} duration={500} className="hover:text-gray-400">
+          Courses
+          </Link>
             <a href="online-courses" className="hover:text-gray-400">
               Online Courses
             </a>
@@ -93,9 +100,9 @@ const Nav = () => {
           <a href="#about" className="block px-4 py-2 hover:bg-gray-600">
             About
           </a>
-          {/* <a href="#services" className="block px-4 py-2 hover:bg-gray-600">
+          <a href="#services" className="block px-4 py-2 hover:bg-gray-600">
             Services
-          </a> */}
+          </a>
           <a href="#courses" className="block px-4 py-2 hover:bg-gray-600">
             Courses
           </a>
