@@ -10,7 +10,7 @@ const Nav = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
-          <a href="/" className="flex items-center">
+          <a href="/" className="flex items-center cursor-pointer">
             <img
               src={AcademyLogo}
               alt="Company Logo"
@@ -20,21 +20,25 @@ const Nav = () => {
           </a>
 
           {/* Desktop Menu */}
+          
           <div className="hidden md:flex space-x-4">
-            <a href="about" className="hover:text-gray-400">
+            <a href="/" className="hover:text-gray-400 cursor-pointer">
+              Home
+            </a>
+            <a href="about" className="hover:text-gray-400 cursor-pointer">
               About
             </a>
             
-            <Link to="services" smooth={true} duration={500} className="hover:text-gray-400">
+            {/* <Link to="services" smooth={true} duration={500} className="hover:text-gray-400">
             Services
-          </Link>
-          <Link to="courses" smooth={true} duration={500} className="hover:text-gray-400">
+          </Link> */}
+          <Link to="courses" smooth={true} duration={500} className="hover:text-gray-400 cursor-pointer">
           Courses
           </Link>
-            <a href="online-courses" className="hover:text-gray-400">
+            <a href="online-courses" className="hover:text-gray-400 cursor-pointer">
               Online Courses
             </a>
-            <a href="csr" className="hover:text-gray-400">
+            <a href="csr" className="hover:text-gray-400 cursor-pointer">
               CSR
             </a>
            
@@ -46,7 +50,7 @@ const Nav = () => {
             </a>
             
             <a href="becomePartner" className="hover:text-gray-400 hover:cursor-pointer">
-            Become Partner
+              Partner With Us
             </a>
           </div>
 
@@ -54,7 +58,7 @@ const Nav = () => {
           <div className="md:hidden">
             <button
               onClick={() => setIsOpen(!isOpen)}
-              className="p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700"
+              className="p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 cursor-pointer"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -87,29 +91,33 @@ const Nav = () => {
       {/* Mobile Menu */}
       {isOpen && (
         <div className="md:hidden bg-gray-700">
-          <a href="#about" className="block px-4 py-2 hover:bg-gray-600">
+          <a href="/" className="hover:text-gray-400 cursor-pointer">
+              Home
+            </a>
+          <a href="#about" className="block px-4 py-2 hover:bg-gray-600 cursor-pointer">
             About
           </a>
-          <a href="#services" className="block px-4 py-2 hover:bg-gray-600">
+          {/* <a href="#services" className="block px-4 py-2 hover:bg-gray-600">
             Services
-          </a>
-          <a href="#courses" className="block px-4 py-2 hover:bg-gray-600">
+          </a> */}
+          <a href="#courses" className="block px-4 py-2 hover:bg-gray-600 cursor-pointer">
             Courses
           </a>
-          <a href="#online-courses" className="block px-4 py-2 hover:bg-gray-600">
+          <a href="#online-courses" className="block px-4 py-2 hover:bg-gray-600 cursor-pointer">
             Online Courses
           </a>
-          <a href="#csr" className="block px-4 py-2 hover:bg-gray-600">
+          <a href="#csr" className="block px-4 py-2 hover:bg-gray-600 cursor-pointer">
             CSR
           </a>
-          <a href="#blog" className="block px-4 py-2 hover:bg-gray-600">
-            Blog
-          </a>
-          <a href="#careers" className="block px-4 py-2 hover:bg-gray-600">
+          
+          <a href="#careers" className="block px-4 py-2 hover:bg-gray-600 cursor-pointer">
             Careers
           </a>
-          <a href="#contact" className="block px-4 py-2 hover:bg-gray-600">
+          <a href="#contact" className="block px-4 py-2 hover:bg-gray-600 cursor-pointer">
             Contact
+          </a>
+          <a href="#becomePartner" className="block px-4 py-2 hover:bg-gray-600 cursor-pointer">
+          Partner With Us
           </a>
           
         </div>

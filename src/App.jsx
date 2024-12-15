@@ -17,10 +17,7 @@ const router = createBrowserRouter([
         element: <Landing />,
         errorElement:ErrorElement,
       },
-      // {
-      //   path: '/services',
-      //   element: <Services />,
-      // },
+      
       {
         path: '/courses/:id',
         element: <Courses/>
@@ -47,10 +44,7 @@ const router = createBrowserRouter([
         path: 'orders',
         element: <Orders />,
       },
-      // {
-      //   path: 'coursesListCart',
-      //   element: <CoursesListCart/>
-      // },
+      
       {
         path:'cartHome',
         element:<CartHome/>

@@ -4,13 +4,6 @@ import { useNavigate, Link } from "react-router-dom";
 const CourseCards = ({ coursesListCart, courses }) => {
   const navigate = useNavigate();
 
-  // const handleDetails = (courses) => {
-  //   navigate("/courses", { state: { courses } });
-  // };
-  // const handleAddCart = (coursesListCart) =>{
-  //   navigate("/coursesListCart");
-  // }
-
   const handleVeiwDetails= () => {
     navigate('/cart'); // Navigate to the cart page
     window.scrollTo({ top: 0, behavior: 'smooth' }); // Scroll to the top

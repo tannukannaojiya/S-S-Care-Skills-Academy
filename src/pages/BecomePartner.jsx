@@ -1,5 +1,4 @@
 import React from "react";
-// import { BecomePartner } from ".";
 
 const BecomePartner = () => {
   return (
