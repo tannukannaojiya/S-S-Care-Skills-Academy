@@ -12,7 +12,7 @@ const services = [
 const Services = () => {
   return (
     <div className="py-5 px-4 bg-gray-100" >
-      <h2 className="text-4xl font-bold text-center mb-8">Our Services</h2>
+      <h2 className="text-4xl font-bold text-center mb-8">Our Courses</h2>
       <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
         {services.map((service, index) => (
           <div

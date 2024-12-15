@@ -3,12 +3,10 @@ import React, { useState } from "react";
 
 const Navbar = ({ setSelectedCategory }) => {
   const menus = [
-    "AC",
-    "Washing Machine",
-    "Car",
+    "RACW/HVAC",
     "Automobile",
-    "Bike",
-    "Scooter",
+    "Robotics",
+    "Corporate Training",
   ];
 
   const handleCategory = (menu) => {
@@ -16,12 +14,12 @@ const Navbar = ({ setSelectedCategory }) => {
   };
 
   return (
-    <div className="flex justify-center py-15 items-center h-20 w-2/3 bg-blue-400 ml-60 rounded-lg text-white">
-      <nav className="flex  gap-6 text-lg font-semibold">
+    <div className="flex justify-center py-8 items-center h-3 w-2/3 bg-neutral ml-60 rounded-lg text-white">
+      <nav className="flex  gap-6 text-lg font-semibold uppercase">
         {menus.map((menu, index) => (
           <div
             key={index}
-            className="px-4 py-4 rounded cursor-pointer transition duration-300 hover:bg-blue-500"
+            className="px-4 py-4 rounded cursor-pointer transition duration-300 hover:bg-neutral-1000"
             onClick={() => handleCategory(menu)}
           >
             {menu}
