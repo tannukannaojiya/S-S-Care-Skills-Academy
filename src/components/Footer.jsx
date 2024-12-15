@@ -34,7 +34,7 @@ const Footer = () => {
 
         {/* Social Media Icons Section */}
         <div>
-          <h2 className="text-xl font-semibold mb-4">Follow Us</h2>
+          {/* <h2 className="text-xl font-semibold mb-4">Follow Us</h2> */}
           <div className="flex space-x-4 text-2xl">
             <a href="https://www.facebook.com/sscareskillsacademynoida" target="_blank" rel="noopener noreferrer" className="hover:text-blue-600"><FaFacebook /></a>
             <a href="https://x.com/careskillsnoida?s=11&t=sOFQ7RqFa8PA7UJcCwwIQA" target="_blank" rel="noopener noreferrer" className="hover:text-blue-400"><FaTwitter /></a>

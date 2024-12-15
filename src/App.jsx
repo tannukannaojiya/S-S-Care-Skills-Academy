@@ -1,11 +1,7 @@
-import { About, BecomePartner, CartHome, ContactUs, Courses, Error, HomeLayout, Landing,  Login, Orders, Register, Services} from './pages';
+import { About, BecomePartner, CartHome, ContactUs, Courses, Error, HomeLayout, Landing,  Login, Orders, Register} from './pages';
 import { RouterProvider, createBrowserRouter } from 'react-router-dom';
 import ErrorElement from './components/ErrorElement';
-import {loader as landingLoader} from './pages/Landing';
-import AddCart from './components/AddCart';
 import CoursesListCart from './components/CoursesListCart';
-
-
 const router = createBrowserRouter([
   {
     path: '/',
@@ -23,37 +19,36 @@ const router = createBrowserRouter([
         element: <Courses/>
       },
        {
-        path: 'cart',
+        path: '/cart',
         element: <CoursesListCart/>,
         
        },
       {
-        path: 'becomePartner',
+        path: '/becomePartner',
         element: <BecomePartner />,
       },
       { 
-        path: 'about', 
+        path: '/about', 
         element: <About /> 
       },
       {
-        path: 'contactUs',
+        path: '/contactUs',
         element: <ContactUs />,
       },
       
       {
-        path: 'orders',
+        path: '/orders',
         element: <Orders />,
       },
       
       {
-        path:'cartHome',
+        path:'/cartHome',
         element:<CartHome/>
       }
     ],
     
   },
   
-
   {
     path: '/login',
     element: <Login />,

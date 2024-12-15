@@ -9,10 +9,9 @@ const links = [
     {id:6, url:'CSR', text:'csr'},
     {id:7, url:'partner with us', text:'partner with us'},
     {id:8, url:'cart', text:'cart'},
-    {id:9, url:'blog', text:'blog'},
-    {id:10, url:'career', text:'career'},
-    {id:11, url:'become partner', text:'become partner'},
-    {id:12, url:'contactUs', text:'contactUs'}
+    {id:9, url:'career', text:'career'},
+    {id:10, url:'become partner', text:'become partner'},
+    {id:11, url:'contactUs', text:'contactUs'}
 ]
 
 const NavLinks = () => {

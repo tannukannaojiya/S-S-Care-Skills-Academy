@@ -1,5 +1,6 @@
-import React, { useState } from 'react';
-import { Link } from 'react-scroll';
+import  { useState } from 'react';
+import { Link as LinkScroll} from 'react-scroll';
+import { Link } from 'react-router-dom';
  import AcademyLogo from "../assets/AcademyLogo.png";
 <assets />
 const Nav = () => {
@@ -10,48 +11,43 @@ const Nav = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
-          <a href="/" className="flex items-center cursor-pointer">
+          <Link to="/" className="flex items-center cursor-pointer">
             <img
               src={AcademyLogo}
               alt="Company Logo"
               className="h-14 w-14"
             />
-            {/* <span className="ml-2 text-xl font-semibold">Company</span> */}
-          </a>
+          </Link>
 
           {/* Desktop Menu */}
           
           <div className="hidden md:flex space-x-4">
-            <a href="/" className="hover:text-gray-400 cursor-pointer">
+            <Link to="/" className="hover:text-gray-400 cursor-pointer">
               Home
-            </a>
-            <a href="about" className="hover:text-gray-400 cursor-pointer">
+            </Link>
+            <Link to="about" className="hover:text-gray-400 cursor-pointer">
               About
-            </a>
-            
-            {/* <Link to="services" smooth={true} duration={500} className="hover:text-gray-400">
-            Services
-          </Link> */}
-          <Link to="courses" smooth={true} duration={500} className="hover:text-gray-400 cursor-pointer">
+            </Link>
+          <LinkScroll to="courses" smooth={true} duration={500} className="hover:text-gray-400 cursor-pointer">
           Courses
-          </Link>
-            <a href="online-courses" className="hover:text-gray-400 cursor-pointer">
+          </LinkScroll>
+            <Link to="online-courses" className="hover:text-gray-400 cursor-pointer">
               Online Courses
-            </a>
-            <a href="csr" className="hover:text-gray-400 cursor-pointer">
+            </Link>
+            <Link to="csr" className="hover:text-gray-400 cursor-pointer">
               CSR
-            </a>
+            </Link>
            
-            <a href="careersUs" className="hover:text-gray-400 hover:cursor-pointer">
+            <Link to="careersUs" className="hover:text-gray-400 hover:cursor-pointer">
               Careers
-            </a>
-            <a href="contactUs" className="hover:text-gray-400 hover:cursor-pointer">
+            </Link>
+            <Link to="contactUs" className="hover:text-gray-400 hover:cursor-pointer">
               Contact Us
-            </a>
+            </Link>
             
-            <a href="becomePartner" className="hover:text-gray-400 hover:cursor-pointer">
+            <Link to="becomePartner" className="hover:text-gray-400 hover:cursor-pointer">
               Partner With Us
-            </a>
+            </Link>
           </div>
 
           {/* Mobile Menu Button */}
@@ -97,9 +93,6 @@ const Nav = () => {
           <a href="#about" className="block px-4 py-2 hover:bg-gray-600 cursor-pointer">
             About
           </a>
-          {/* <a href="#services" className="block px-4 py-2 hover:bg-gray-600">
-            Services
-          </a> */}
           <a href="#courses" className="block px-4 py-2 hover:bg-gray-600 cursor-pointer">
             Courses
           </a>

@@ -1,11 +1,10 @@
 export {default as FormInput} from './FormInput';
 export {default as SubmitBtn} from './SubmitBtn';
-export {default as Header} from './Header';
+ export {default as Header} from './Header';
 export {default as Navbar} from './Navbar';
 export {default as Hero} from './Hero';
 export {default as ErrorElement} from './ErrorElement';
 export {default as AddCart} from './AddCart';
-export {default as Blog} from './Blog';
 export {default as CartNavbar} from './CartNavbar';
 export {default as CourseCart} from './CourseCard';
 export {default as CourseDetail} from './CourseDetail';

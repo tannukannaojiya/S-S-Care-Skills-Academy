@@ -8,12 +8,14 @@ import {WhoWeAre, CustomizedProjectReport, DetailedProjectReport, Scroller }  fr
 import Nav from "../components/Nav";
 import HeadHeroSection from "../components/HeadHeroSection";
 import CmLogoSection from "../components/CmLogoSection";
+import Navbars from "../components/Navbars";
 
 const HomeLayout = () => {
   return (
     <>
-    <Header/>
-    <Nav/>
+    {/* <Header/>
+    <Nav/> */}
+    <Navbars/>
     <section className=" py-5"><Outlet/></section>
     
       <Footer/>
