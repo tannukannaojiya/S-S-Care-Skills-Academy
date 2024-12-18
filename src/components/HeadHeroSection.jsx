@@ -17,7 +17,7 @@ const HeadHeroSection = () => {
   }, []);
 
   return (
-    <div className="relative w-full h-screen overflow-hidden">
+    <div className="relative w-full h-96 overflow-hidden">
       {/* Images */}
       {images.map((image, index) => (
         <div

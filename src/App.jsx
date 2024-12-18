@@ -2,6 +2,10 @@ import { About, BecomePartner, CartHome, ContactUs, Courses, Error, HomeLayout, 
 import { RouterProvider, createBrowserRouter } from 'react-router-dom';
 import ErrorElement from './components/ErrorElement';
 import CoursesListCart from './components/CoursesListCart';
+import Csr from './components/Csr';
+import OnlineHomePage from './pages/OnlineHomePage';
+import OfflineHomePage from './pages/OfflineHomePage';
+
 const router = createBrowserRouter([
   {
     path: '/',
@@ -30,6 +34,22 @@ const router = createBrowserRouter([
       { 
         path: '/about', 
         element: <About /> 
+      },
+      { 
+        path: '/csr', 
+        element: <Csr /> 
+      },
+       { 
+        path: '/offlineCourses', 
+        element: <OfflineHomePage /> 
+      },
+      { 
+        path: '/onlineCourse', 
+        element: <OnlineHomePage /> 
+      },
+      {
+        path: '/Careers',
+        element: <ContactUs/>,
       },
       {
         path: '/contactUs',

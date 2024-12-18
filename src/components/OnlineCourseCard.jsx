@@ -1,6 +1,6 @@
 import { useNavigate, Link } from "react-router-dom";
 
-const CourseCards = ({courses }) => {
+const OnlineCourseCards = ({ coursesListCart, courses }) => {
   const navigate = useNavigate();
 
   const handleVeiwDetails= () => {
@@ -15,7 +15,7 @@ const CourseCards = ({courses }) => {
 
   return (
     <div className=" ">
-    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 pt-10 px-6 ">
+    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 pt-20 px-6 ">
       {courses.map((courses, index) => (
         <div
           key={index}
@@ -26,9 +26,16 @@ const CourseCards = ({courses }) => {
           <p className="text-gray-600 mb-2 ">{courses.details}</p>
           <p className="text-gray-600 mb-4">Total Day: {courses.day} day</p>
           <div className="flex justify-between py-2 ">
+          {/* <button
+            onClick={() => handleDetails(courses)}
+            className="bg-blue-500 text-white px-4   rounded hover:bg-blue-600 transition"
+          >
+            Veiw Details →
+          </button> */}
           <Link to={`/courses/${courses.id}`}
              onClick={handleVeiwDetails}
-            className="bg-blue-500 text-white px-4 flex items-center rounded hover:bg-blue-600 transition">
+            className="bg-blue-500 text-white px-4 flex items-center rounded hover:bg-blue-600 transition"
+          >
             Veiw Details →
           </Link>
           <Link to={`/cart`}
@@ -45,4 +52,4 @@ const CourseCards = ({courses }) => {
   );
 };
 
-export default CourseCards;
+export default OnlineCourseCards;

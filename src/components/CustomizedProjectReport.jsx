@@ -3,7 +3,7 @@ import React from 'react';
 const CustomizedProjectReport = () => {
   return (
     <div className="bg-gray-100 min-h-screen flex flex-col justify-center items-center py-5">
-      <h1 className="text-2xl md:text-4xl font-bold text-gray-800 mb-10">
+      <h1 className="text-4xl md:text-4xl font-bold text-gray-800 mb-10">
         Customized Project Report
       </h1>
       <div className="bg-white shadow-lg  rounded-lg w-11/12 lg:w-10/12 flex flex-col md:flex-row p-5 md:p-10 space-y-5 md:space-y-0">

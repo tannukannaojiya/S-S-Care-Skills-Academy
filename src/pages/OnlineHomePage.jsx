@@ -1,7 +1,8 @@
-// src/pages/HomePage.jsx
 import React, { useState } from "react";
 import Navbar from "../components/Navbar";
-import CourseCards from "../components/CourseCard";
+// import CourseCards from "../components/CourseCard";
+// import OnlineCourseNav from "../components/OnlineCourseNav";
+import OnlineCourseCard from "../components/OnlineCourseCard";
 
 const allCourses = {
   "RACW/HVAC": [
@@ -31,15 +32,15 @@ const allCourses = {
   ],
 };
 
-const HomePage = () => {
+const OnlineHomePage = () => {
   const [selectedCategory, setSelectedCategory] = useState("RACW/HVAC");
 
   return (
     <div className="bg-gray-100 min-h-screen py-10">
       <Navbar setSelectedCategory={setSelectedCategory} />
-      <CourseCards courses={allCourses[selectedCategory] || []} />
+      <OnlineCourseCard courses={allCourses[selectedCategory] || []} />
     </div>
   );
 };
 
-export default HomePage;
+export default OnlineHomePage;

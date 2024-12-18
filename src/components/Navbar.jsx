@@ -1,5 +1,3 @@
-// src/components/Navbar.jsx
-import React, { useState } from "react";
 
 const Navbar = ({ setSelectedCategory }) => {
   const menus = [
@@ -15,7 +13,7 @@ const Navbar = ({ setSelectedCategory }) => {
 
   return (
     <div className="flex justify-center py-8 items-center h-3 w-2/3 bg-neutral ml-60 rounded-lg text-white">
-      <nav className="flex  gap-6 text-lg font-semibold uppercase">
+      <nav className="flex gap-6 text-lg font-semibold uppercase">
         {menus.map((menu, index) => (
           <div
             key={index}

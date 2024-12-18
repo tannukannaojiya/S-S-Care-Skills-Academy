@@ -10,7 +10,7 @@ export {default as BecomePartner} from './BecomePartner';
 export {default as ContactUs} from './ContactUs'
 export {default as CourseDetail} from './ViewCourseDetail';
 export {default as Courses} from './Courses';
-export {default as HomePage} from './HomePage';
+export {default as HomePageCourses} from './HomePageCourses';
 export {default as CartHome} from './CartHome';
 
 

@@ -1,13 +1,10 @@
 import React from 'react';
 import { Element } from 'react-scroll';
-// import Hero from '../components/Hero';
 import HeadHeroSection from '../components/HeadHeroSection';
 import Services from './Services';
-import Courses from './Courses';
-import CoursesListCart from '../components/CoursesListCart';
-import HomePage from './HomePage';
+import HomePage from './HomePageCourses';
 import { CustomizedProjectReport, WhoWeAre } from '../components';
-import CmLogoSection from '../components/CmLogoSection';
+import HeroSections from '../components/HeroSections';
 
 export const loader = async () =>{
 const response = await customFetch(url);
@@ -20,17 +17,16 @@ const Landing = () => {
   return (
     <div className='-mt-5'>
       <HeadHeroSection/>
-      {/* <Services/>
-      <HomePage/> */}
       <Element name="services">
         <Services />
       </Element>
-      <Element name="courses">
-        <HomePage />
-      </Element>
+      {/* <Element name="courses">
+        <HomePage/>
+      </Element> */}
+      <HomePage/>
       <WhoWeAre/>
       <CustomizedProjectReport/>
-      <CmLogoSection/>
+      <HeroSections/>
       
       
     </div>

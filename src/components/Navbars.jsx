@@ -5,7 +5,7 @@ import { BsCart3 } from 'react-icons/bs';
 // import { BsMoonFill, BsSunFill } from 'react-icons/bs';
 import AcademyLogo from '../assets/AcademyLogo.png';
 
-const Navbar = () => {
+const Navbars = () => {
   const [isMobileOpen, setIsMobileOpen] = useState(false);
 
   return (
@@ -27,10 +27,12 @@ const Navbar = () => {
             <Link to="/about" className="hover:text-blue-400 transition duration-300">
               About
             </Link>
-            <LinkScroll to="courses" smooth={true} duration={500} className="hover:text-blue-400 transition duration-300">
+            {/* <LinkScroll to="courses" smooth={true} duration={500} className="hover:text-blue-400 transition duration-300">
               Courses
-            </LinkScroll>
-            <Link to="/online-courses" className="hover:text-blue-400 transition duration-300">
+            </LinkScroll> */}
+            <Link to="/offlineCourses" className="hover:text-blue-400 transition duration-300">Courses</Link>
+    
+            <Link to="/onlineCourse" className="hover:text-blue-400 transition duration-300">
               Online Courses
             </Link>
             <Link to="/csr" className="hover:text-blue-400 transition duration-300">
@@ -150,4 +152,4 @@ const Navbar = () => {
   );
 };
 
-export default Navbar;
+export default Navbars;
