@@ -1,6 +1,6 @@
 import { useNavigate, useParams } from "react-router-dom";
 
-const allCourses = {
+const offlineAllCourses = {
   "RACW/HVAC": [
     {id:1, Price:20000, Duration:"45days", Certificate: "Available", Language: "Hindi", Training: "Assessment",  name: "AC Repairing & Maintenance Course", details: "Learn AC fundamentals", video: "https://www.youtube.com/embed/rNNAuA7zSfQ?si=7jtj2Z_C1YoSCRs0"},
     {id:2, Price:30000, Duration:"90days", Certificate: "Available", Language: "Hindi", Training: "Assessment", name: "Refrigeration Repairing & Maintenance Course ", details: "Learn Refrigeration fundamentals", video: "https://www.youtube.com/embed/IuECw7Z8Zno?si=ttlmZJK2l51LWxuo" },
@@ -31,11 +31,11 @@ const OfflineCourse = (cart) => {
     const navigate = useNavigate();
     let {id} = useParams();
     const courseId = id;
-    const course = Object.values(allCourses)
+    const course = Object.values(offlineAllCourses)
     .flat()
     .find((course) => course.id === parseInt(courseId));
     // console.log(course);
-    const handleAddCart = (cart) =>{
+    const handleAddCart = () =>{
         navigate("/cart");
         window.scrollTo({ top: 0, behavior: 'smooth' }); // Scroll to the top
       }

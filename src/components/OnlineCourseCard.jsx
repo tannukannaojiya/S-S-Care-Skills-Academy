@@ -32,7 +32,7 @@ const OnlineCourseCards = ({ coursesListCart, courses }) => {
           >
             Veiw Details →
           </button> */}
-          <Link to={`/courses/${courses.id}`}
+          <Link to={`/onlineCourse/${courses.id}`}
              onClick={handleVeiwDetails}
             className="bg-blue-500 text-white px-4 flex items-center rounded hover:bg-blue-600 transition"
           >

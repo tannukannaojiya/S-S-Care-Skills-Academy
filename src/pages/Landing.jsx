@@ -20,15 +20,10 @@ const Landing = () => {
       <Element name="services">
         <Services />
       </Element>
-      {/* <Element name="courses">
-        <HomePage/>
-      </Element> */}
       <HomePage/>
       <WhoWeAre/>
       <CustomizedProjectReport/>
       <HeroSections/>
-      
-      
     </div>
   )
 }

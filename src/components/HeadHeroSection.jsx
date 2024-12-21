@@ -1,9 +1,13 @@
 import React, { useState, useEffect } from 'react';
-
+import image2 from '../assets/heroPage2.jpg';
+import image3 from '../assets/heroPage3.jpg';
 const images = [
-  "https://images.pexels.com/photos/8985662/pexels-photo-8985662.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-  "https://images.pexels.com/photos/5463577/pexels-photo-5463577.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-  "https://images.pexels.com/photos/4488639/pexels-photo-4488639.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+  // "https://images.pexels.com/photos/8985662/pexels-photo-8985662.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+  // "https://images.pexels.com/photos/5463577/pexels-photo-5463577.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+  // "https://images.pexels.com/photos/4488639/pexels-photo-4488639.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+  { id: 1, src: 'https://images.pexels.com/photos/8985662/pexels-photo-8985662.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1', alt: 'Image 1' },
+    { id: 2, src: image2, alt: 'Image 2' },
+    { id: 3, src: image3, alt: 'Image 3' },
 ];
 
 const HeadHeroSection = () => {
@@ -17,11 +21,13 @@ const HeadHeroSection = () => {
   }, []);
 
   return (
-    <div className="relative w-full h-96 overflow-hidden">
+    <div className="relative w-full h-screen overflow-hidden">
       {/* Images */}
       {images.map((image, index) => (
-        <div
-          key={index}
+        <img
+        key={image.id}
+        src={image.src}
+        alt={image.alt}
           className={`absolute inset-0 w-full h-full transition-opacity duration-1000 ${
             index === currentIndex ? "opacity-100" : "opacity-0"
           }`}
@@ -30,7 +36,7 @@ const HeadHeroSection = () => {
             backgroundSize: "cover",
             backgroundPosition: "center",
           }}
-        ></div>
+        />
       ))}
 
       {/* Overlay */}

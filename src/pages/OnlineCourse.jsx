@@ -1,8 +1,6 @@
-import React from 'react';
-
 import { useNavigate, useParams } from "react-router-dom";
 
-const allCourses = {
+const allCoursesOnline = {
   "RACW/HVAC": [
     {id:1, Price:20000, Duration:"45days", Certificate: "Available", Language: "Hindi", Training: "Assessment",  name: "AC Repairing & Maintenance Course", details: "Learn AC fundamentals", video: "https://www.youtube.com/embed/rNNAuA7zSfQ?si=7jtj2Z_C1YoSCRs0"},
     {id:2, Price:30000, Duration:"90days", Certificate: "Available", Language: "Hindi", Training: "Assessment", name: "Refrigeration Repairing & Maintenance Course ", details: "Learn Refrigeration fundamentals", video: "https://www.youtube.com/embed/IuECw7Z8Zno?si=ttlmZJK2l51LWxuo" },
@@ -24,8 +22,9 @@ const allCourses = {
   Robotics: [
     {id:14, Price:30000, Duration:"60days", Certificate: "Available", Language: "Hindi", Training: "Assessment", name: "Bike Repairing Course", details: "Learn Bike fundamentals", video: "https://www.youtube.com/embed/6TUdYYiysbA?si=k7PuGpmzI6VmwDkj" },  
   ],
-  "Corporate Training": [
+  "Corporate": [
     {id:15, Price:7000, Duration:"15days", Certificate: "Available", Language: "Hindi", Training: "Assessment", name: "Mechanical Scooter Repairing Course", details: "Learn Mechanical Scooter fundamentals", video: "https://www.youtube.com/embed/b1LtyQSRgzk?si=SsTIpmDADe0Yu7A2" },
+    {id:9, Price:1500, Duration:"30days", Certificate: "Available", Language: "Hindi", Training: "Assessment", name: "Physical and Education Course", details: "Physical and Education fundamentals", video: "https://www.youtube.com/embed/b1LtyQSRgzk?si=SsTIpmDADe0Yu7A2" },
   ],
 };
 
@@ -33,7 +32,7 @@ const OnlineCourse = (cart) => {
     const navigate = useNavigate();
     let {id} = useParams();
     const courseId = id;
-    const course = Object.values(allCourses)
+    const course = Object.values(allCoursesOnline)
     .flat()
     .find((course) => course.id === parseInt(courseId));
     // console.log(course);
@@ -49,7 +48,7 @@ const OnlineCourse = (cart) => {
     <div className="w-full md:w-1/2">
       <iframe
         className="w-full h-48 md:h-full"
-        src={course.video}
+         src={course.video}
         title={course.name}
         
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"

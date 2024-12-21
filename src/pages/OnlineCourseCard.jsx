@@ -1,6 +1,4 @@
 // src/components/CourseCard.jsx
-import React from 'react';
-
 import { useNavigate, useParams } from "react-router-dom";
 
 const allCourses = {
@@ -25,7 +23,7 @@ const allCourses = {
   Robotics: [
     {id:14, Price:30000, Duration:"60days", Certificate: "Available", Language: "Hindi", Training: "Assessment", name: "Bike Repairing Course", details: "Learn Bike fundamentals", video: "https://www.youtube.com/embed/6TUdYYiysbA?si=k7PuGpmzI6VmwDkj" },  
   ],
-  "Corporate Training": [
+  "Corporate": [
     {id:15, Price:7000, Duration:"15days", Certificate: "Available", Language: "Hindi", Training: "Assessment", name: "Mechanical Scooter Repairing Course", details: "Learn Mechanical Scooter fundamentals", video: "https://www.youtube.com/embed/b1LtyQSRgzk?si=SsTIpmDADe0Yu7A2" },
   ],
 };

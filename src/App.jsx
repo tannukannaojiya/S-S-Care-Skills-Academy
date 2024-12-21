@@ -5,6 +5,7 @@ import CoursesListCart from './components/CoursesListCart';
 import Csr from './components/Csr';
 import OnlineHomePage from './pages/OnlineHomePage';
 import OfflineHomePage from './pages/OfflineHomePage';
+import CarrerPage from './components/CarrerPage';
 
 const router = createBrowserRouter([
   {
@@ -20,6 +21,10 @@ const router = createBrowserRouter([
       
       {
         path: '/courses/:id',
+        element: <Courses/>
+      },
+      {
+        path: '/onlineCourse/:id',
         element: <Courses/>
       },
        {
@@ -48,8 +53,8 @@ const router = createBrowserRouter([
         element: <OnlineHomePage /> 
       },
       {
-        path: '/Careers',
-        element: <ContactUs/>,
+        path: '/careerPage',
+        element: <CarrerPage/>,
       },
       {
         path: '/contactUs',

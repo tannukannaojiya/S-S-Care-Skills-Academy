@@ -28,6 +28,7 @@ const allCourses = {
   ],
   "Corporate Training": [
     {id:15, name: "Corporate Training", day:"15", details: "Learn Corporate Training fundamentals..", img:"https://mediaindia.eu/wp-content/uploads/2016/06/Corporate-training.jpg" },
+    {id:9, name: "Physical and Education", day:"30", details: "Learn Physical and Education fundamentals..", img:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqBZlS5FPGRHhOQXfq7SNLtUSWSMSV0QFAHQ&s" },
   ],
 };
 

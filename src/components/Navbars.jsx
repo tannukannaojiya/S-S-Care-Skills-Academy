@@ -10,11 +10,11 @@ const Navbars = () => {
 
   return (
     <header className="bg-neutral text-neutral-content shadow-md">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 2xl:space-x-2">
         <div className="flex justify-between items-center h-16">
           {/* Logo Section */}
-          <div className="flex items-center">
-            <Link to="/" className="flex items-center cursor-pointer">
+          <div className="flex items-center sm: ">
+            <Link to="/" className="flex items-center cursor-pointer sm:pr-2">
               <img src={AcademyLogo} alt="Academy Logo" className="h-14 w-14" />
             </Link>
           </div>
@@ -38,7 +38,7 @@ const Navbars = () => {
             <Link to="/csr" className="hover:text-blue-400 transition duration-300">
               CSR
             </Link>
-            <Link to="/careers" className="hover:text-blue-400 transition duration-300">
+            <Link to="/careerPage" className="hover:text-blue-400 transition duration-300">
               Careers
             </Link>
             <Link to="/contactUs" className="hover:text-blue-400 transition duration-300">
@@ -123,7 +123,7 @@ const Navbars = () => {
           <Link to="/csr" className="block hover:text-blue-400">
             CSR
           </Link>
-          <Link to="/careers" className="block hover:text-blue-400">
+          <Link to="/careerPage" className="block hover:text-blue-400">
             Careers
           </Link>
           <Link to="/contact" className="block hover:text-blue-400">
@@ -153,3 +153,4 @@ const Navbars = () => {
 };
 
 export default Navbars;
+

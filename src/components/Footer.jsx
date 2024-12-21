@@ -24,11 +24,14 @@ const Footer = () => {
         <div>
           <h2 className="text-xl font-semibold mb-4">Useful Links</h2>
           <ul className="space-y-2">
-            <li><a href="#about" className="hover:underline">About Us</a></li>
-            <li><a href="#services" className="hover:underline">Services</a></li>
-            <li><a href="#contact" className="hover:underline">Contact Us</a></li>
-            <li><a href="#courses" className="hover:underline">Courses</a></li>
-            <li><a href="#admission" className="hover:underline">Admission</a></li>
+            <li className='cursor-pointer'>Home</li>
+            <li className='cursor-pointer'>About Us</li>
+            <li className='cursor-pointer'>Courses</li>
+            <li className='cursor-pointer'>Online Courses</li>
+            <li className='cursor-pointer'>CSR</li>
+            <li className='cursor-pointer'>Carrers</li>
+            <li className='cursor-pointer'>Contact Us</li>
+            <li className='cursor-pointer'>Partner With Us</li>
           </ul>
         </div>
 
