@@ -114,10 +114,8 @@ const Navbars = () => {
           <Link to="/about" className="block hover:text-blue-400">
             About
           </Link>
-          <LinkScroll to="courses" smooth={true} duration={500} className="block hover:text-blue-400">
-            Courses
-          </LinkScroll>
-          <Link to="/online-courses" className="block hover:text-blue-400">
+          <Link to="/offlineCourses" className="block hover:text-blue-400">Courses</Link>
+          <Link to="/onlineCourse" className="block hover:text-blue-400">
             Online Courses
           </Link>
           <Link to="/csr" className="block hover:text-blue-400">
