@@ -41,13 +41,13 @@ const HeadHeroSection = () => {
 
       {/* Overlay */}
       <div className="absolute inset-0 bg-black bg-opacity-30 flex items-center justify-center">
-        <h1 className="text-white text-4xl md:text-6xl font-bold text-center px-4 sm:font-normal">
+        <h1 className="text-white text-4xl md:text-6xl font-bold text-center px-4 object-cover text-xs text-sm text-lg">
           Welcome To S & S Care Skills Academy
         </h1>
       </div>
 
       {/* Indicators */}
-      <div className="absolute bottom-5 left-1/2 transform -translate-x-1/2 flex space-x-2">
+      <div className="absolute bottom-5 left-1/2 transform -translate-x-1/2 flex space-x-2 object-cover">
         {images.map((_, index) => (
           <button
             key={index}

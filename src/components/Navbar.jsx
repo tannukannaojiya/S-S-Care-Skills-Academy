@@ -12,9 +12,9 @@ const Navbar = ({ setSelectedCategory }) => {
   };
 
   return (
-    <div className="bg-neutral-800 mx-4 px-4 text-white py-4 sm:mx-20 md:mx-10 xl:mx-90">
+    <div className="bg-neutral-800 mx-4 px-4 text-white py-4 sm:mx-10 md:mx-10 xl:mx-90">
       <div className=" mx-auto px-4 rounded-lg">
-        <nav className="flex justify-center md:gap-6 sm:px-2 text-sm sm:text-base md:text-lg font-semibold uppercase">
+        <nav className="flex justify-center md:gap-6 text-sm sm:text-base md:text-lg font-semibold uppercase">
           {menus.map((menu, index) => (
             <div
               key={index}

@@ -10,13 +10,23 @@ const Footer = () => {
         {/* About the Academy Section */}
         <div>
           <h2 className="text-xl font-semibold mb-4">About the Academy</h2>
-          <p className="text-gray-400 text-justify">
+          {/* <p className="text-gray-400 text-justify">
             S&S Care Skills Academy (P) Ltd. was established in the year 2014 to impart skills to the 
             employable youth of India for a better future. S&S Care Skills Academy is committed to creating a 
             skilled workforce in India. We firmly believe that education, skills, and knowledge of superior quality 
             pave the way for a rewarding career for the current and future generation of our country.
-            <br />
+            
             In our mission of skill development, we provide paid trainings, run various CSR activities, & corporate trainings.
+          </p> */}
+          <p className="text-gray-400 text-justify">
+          S&S Care Skills Academy is a leading hands-on learning provider in
+           various technical courses such as AC Repair, PCB Repair, Mobile 
+           Repair, Automobile Repair and many more. Since our launch in 2014, 
+           we have been helping over thousands of youths from all over India 
+           to learn technical skills through our wide range of courses and 
+           hands-on labs to become employable/potential learners.t, we 
+           provide paid trainings, run various CSR activities, & corporate 
+           trainings.
           </p>
         </div>
 
