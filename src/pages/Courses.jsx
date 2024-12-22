@@ -9,14 +9,14 @@ const Courses = (cart) => {
     const course = Object.values(allCourses)
     .flat()
     .find((course) => course.id === parseInt(courseId));
-    // console.log(course);
+
     const handleAddCart = () =>{
         navigate("/cart");
         window.scrollTo({ top: 0, behavior: 'smooth' }); // Scroll to the top
       }
   return (
    
-    <div className="max-w-4xl mx-auto bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-all">
+    <div className="max-w-4xl mx-auto bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-all sm:px-6">
   <div className="flex flex-col md:flex-row">
     {/* Video */}
     <div className="w-full md:w-1/2">
@@ -37,7 +37,7 @@ const Courses = (cart) => {
 
       {/* Features */}
       <ul className="mt-4 text-sm text-gray-600 space-y-2">
-        <li>🕒 Duration: {course.Duration}</li>
+        <li>🕒 Duration: {course.day}</li>
         <li>🏅 Certificate {course.Certificate}</li>
         <li>📈 Training {course.Training}</li>
         <li>🌐 Language: {course.Language}</li>

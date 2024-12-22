@@ -6,6 +6,8 @@ import Csr from './components/Csr';
 import OnlineHomePage from './pages/OnlineHomePage';
 import OfflineHomePage from './pages/OfflineHomePage';
 import CarrerPage from './components/CarrerPage';
+import OnlineCourse from './pages/OnlineCourse';
+import OfflineCourse from './pages/OfflineCourse';
 
 const router = createBrowserRouter([
   {
@@ -25,7 +27,11 @@ const router = createBrowserRouter([
       },
       {
         path: '/onlineCourse/:id',
-        element: <Courses/>
+        element: <OnlineCourse/>
+      },
+      {
+        path: '/offlineCourses/:id',
+        element: <OfflineCourse/>
       },
        {
         path: '/cart',

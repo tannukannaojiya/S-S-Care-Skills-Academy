@@ -37,7 +37,7 @@ const Scroller = () => {
     <h1 className="text-white text-" >Infinite Scroll Animation</h1>
     </div> */}
     
-    <div className="flex items-center justify-center min-h-screen bg-gray-900">
+    <div className="flex items-center justify-center min-h-screen bg-gray-900 ">
     
       <div
         className="scroller"

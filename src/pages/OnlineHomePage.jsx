@@ -1,7 +1,5 @@
 import React, { useState } from "react";
 import Navbar from "../components/Navbar";
-// import CourseCards from "../components/CourseCard";
-// import OnlineCourseNav from "../components/OnlineCourseNav";
 import OnlineCourseCard from "../components/OnlineCourseCard";
 import { courseOnlineData } from "../utils/courseOnlineData";
 

@@ -4,7 +4,7 @@ import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin, FaYoutube } from 'react
 const Footer = () => {
   return (
     <>
-    <footer className="bg-gray-800 text-gray-200 py-10 px-4">
+    <footer className="bg-gray-800 text-gray-200 py-10 px-4 md:px-20 sm:px-20">
       <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
         
         {/* About the Academy Section */}

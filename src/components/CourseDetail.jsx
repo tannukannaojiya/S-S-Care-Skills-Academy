@@ -2,7 +2,7 @@ import React from "react";
 
 const CourseDetail = ({ course }) => {
   return (
-    <div className="p-4">
+    <div className="p-4 sm:px-5">
       <h2 className="text-2xl font-bold">{course.name}</h2>
       <p className="text-gray-600">{course.description}</p>
       <iframe

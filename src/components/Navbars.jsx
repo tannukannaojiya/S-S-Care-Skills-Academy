@@ -15,12 +15,12 @@ const Navbars = () => {
           {/* Logo Section */}
           <div className="flex items-center sm: ">
             <Link to="/" className="flex items-center cursor-pointer sm:pr-2">
-              <img src={AcademyLogo} alt="Academy Logo" className="h-14 w-14" />
+              <img src={AcademyLogo} alt="Academy Logo" className="h-14 w-14 lg:h-12 lg:w-12 md:h-11 md:w-11" />
             </Link>
           </div>
 
           {/* Desktop Menu */}
-          <div className="hidden md:flex space-x-6">
+          <div className="hidden md:flex space-x-6 lg:space-x-4 md:space-x-2 md:text-xs">
             <Link to="/" className="hover:text-blue-400 transition duration-300">
               Home
             </Link>
@@ -50,10 +50,10 @@ const Navbars = () => {
           </div>
 
           {/* Action Buttons */}
-          <div className="hidden sm:flex space-x-3 items-center">
+          <div className="hidden sm:flex space-x-2 items-center lg-space-x-0.5 lg:pl-1">
             <Link
               to="/login"
-              className="px-3 py-1 bg-blue-500 text-white rounded-md hover:bg-blue-600 transition duration-300"
+              className="px-3 py-1 bg-blue-500 text-white rounded-md hover:bg-blue-600 transition duration-300 "
             >
               Login
             </Link>
@@ -132,10 +132,10 @@ const Navbars = () => {
           <Link to="/partner" className="block hover:text-blue-400">
             Partner With Us
           </Link>
-          <div className="flex space-x-4 mt-4">
+          <div className="flex space-x-4 mt-4 md:space-x-2 md:px-2 sm:hidden">
             <Link
               to="/login"
-              className="px-4 py-2 bg-blue-500 text-white rounded-md hover:bg-blue-600 transition duration-300"
+              className="px-4 py-2 bg-blue-500 text-white rounded-md hover:bg-blue-600 transition duration-300 "
             >
               Login
             </Link>

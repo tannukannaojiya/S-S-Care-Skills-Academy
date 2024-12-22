@@ -1,6 +1,6 @@
 import { useNavigate, Link } from "react-router-dom";
 
-const OfflineCourseCards = ({courses }) => {
+const OfflineCourseCard = ({courses}) => {
   const navigate = useNavigate();
 
   const handleVeiwDetails= () => {
@@ -16,17 +16,17 @@ const OfflineCourseCards = ({courses }) => {
   return (
     <div className=" ">
     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 pt-20 px-6 ">
-      {courses.map((courses, index) => (
+      {courses.map((course, index) => (
         <div
           key={index}
           className="bg-white shadow-md rounded-lg p-4 text-center"
         >
-            <div className="h-28 w-28  "><img className="rounded-full" src={courses.img} alt="logo"/></div>
-          <div className="text-2xl mt-0 font-semibold mb-2 line-clamp-1 ">{courses.name}</div>
-          <p className="text-gray-600 mb-2 ">{courses.details}</p>
-          <p className="text-gray-600 mb-4">Total Day: {courses.day} day</p>
+            <div className="h-28 w-28  "><img className="rounded-full" src={course.img} alt="logo"/></div>
+          <div className="text-2xl mt-0 font-semibold mb-2 line-clamp-1 ">{course.name}</div>
+          <p className="text-gray-600 mb-2 ">{course.details}</p>
+          <p className="text-gray-600 mb-4">Total Day: {course.day} day</p>
           <div className="flex justify-between py-2 ">
-          <Link to={`/courses/${courses.id}`}
+          <Link to={`/offlineCourses/${course.id}`}
              onClick={handleVeiwDetails}
             className="bg-blue-500 text-white px-4 flex items-center rounded hover:bg-blue-600 transition">
             Veiw Details →
@@ -45,4 +45,4 @@ const OfflineCourseCards = ({courses }) => {
   );
 };
 
-export default OfflineCourseCards;
+export default OfflineCourseCard;

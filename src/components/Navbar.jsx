@@ -43,7 +43,7 @@ const Navbar = ({ setSelectedCategory }) => {
   };
 
   return (
-    <div className="bg-neutral-800 text-white py-4 sm:mx-10 lg:mx-56 md:mx-32 xl:64 2xl:mx-64">
+    <div className="bg-neutral-800 text-white py-4 sm:mx-10 md:mx-38  2xl:mx-64 ">
       <div className="w-2/3 mx-auto px-4 rounded-lg">
         <nav className="flex justify-center gap-6 text-sm sm:text-base md:text-lg font-semibold uppercase">
           {menus.map((menu, index) => (
