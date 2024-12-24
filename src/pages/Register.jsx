@@ -1,19 +1,41 @@
-// import FormInput from "../components/FormInput"
-// import SubmitBtn from "../components/SubmitBtn"
+import React, { useState } from "react";
+import { createUserWithEmailAndPassword } from 'firebase/auth';
+ import {FormInput, SubmitBtn} from '../components';
+ import { Link, useNavigate} from 'react-router-dom';
+ import { auth } from "../components/Firebase";
+ import { Form } from "react-router-dom";
 
-import {FormInput, SubmitBtn} from '../components';
-import {Form, Link} from 'react-router-dom';
 
-const Register = () => {
+const handleRegister = async(e)=>{
+  const navigate = useNavigate();
+  e.preventDefault();
+  try{
+    await createUserWithEmailAndPassword(auth, email, password)
+    const user = auth.currentUser;
+    console.log(user);
+    console.log("User Registered Successfully!!")
+    navigate("/");
+  }catch(error){
+    console.log(error.message);
+  }
+};
+
+function Register () {
+  const [username, setUsername] = useState("");
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  
+  
+
   return (
     <section className='h-screen grid place-items-center'>
-        <Form method='POST' className='card w-96 p-8 bg-base-100 shadow-lg flex flex-col gap-y-4'>
+        <Form method='POST' onSubmit={handleRegister}  className='card w-96 p-8 bg-base-100 shadow-lg flex flex-col gap-y-4'>
         <h4 className='text-center text-3xl font-bold'>Register</h4>
-        <FormInput type='text' label='username' name='username'/> 
-        <FormInput type='email' label='email' name='email'/>
-        <FormInput type='password' label='password' name='password'/>
+        <FormInput type='text' value={username} label='username' className="form-control" name='username' onChange={(e)=>setUsername(e.target.value)} required/> 
+        <FormInput type='email' value={email} label='email' name='email' onChange={(e)=>setEmail(e.target.value)} required/>
+        <FormInput type='password' value={password} label='password' name='password' onChange={(e)=>setPassword(e.target.value)} required/>
         <div className='mt-4'>
-          <SubmitBtn text='register' />
+          <SubmitBtn type="submit" value="Register"/>
         </div>
         <p className='text-center'>
           Already a member?
@@ -29,4 +51,6 @@ const Register = () => {
   )
 }
 
-export default Register
+export default Register;
+
+

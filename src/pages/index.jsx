@@ -1,3 +1,5 @@
+import { SubmitBtn } from '../components';
+
 export {default as About} from './About';
 export {default as Landing} from './Landing';
 export {default as Orders} from './Orders';
@@ -12,6 +14,7 @@ export {default as CourseDetail} from './ViewCourseDetail';
 export {default as Courses} from './Courses';
 export {default as HomePageCourses} from './HomePageCourses';
 export {default as CartHome} from './CartHome';
+
 
 
 

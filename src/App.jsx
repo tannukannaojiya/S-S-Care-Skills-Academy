@@ -8,6 +8,7 @@ import OfflineHomePage from './pages/OfflineHomePage';
 import CarrerPage from './components/CarrerPage';
 import OnlineCourse from './pages/OnlineCourse';
 import OfflineCourse from './pages/OfflineCourse';
+import { ToastContainer } from 'react-toastify';
 
 const router = createBrowserRouter([
   {
@@ -94,5 +95,6 @@ const router = createBrowserRouter([
 
 const App = () => {
   return <RouterProvider router={router} />;
+  <ToastContainer />
 };
 export default App;

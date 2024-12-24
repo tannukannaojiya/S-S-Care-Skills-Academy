@@ -15,7 +15,7 @@ const CourseCards = ({courses }) => {
 
   return (
     <div className=" ">
-    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 pt-10 px-6 ">
+    <div className="grid  gap-6 pt-10 px-6 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3  ">
       {courses.map((courses, index) => (
         <div
           key={index}
@@ -25,7 +25,7 @@ const CourseCards = ({courses }) => {
           <div className="text-2xl mt-0 font-semibold mb-2 line-clamp-1 ">{courses.name}</div>
           <p className="text-gray-600 mb-2 ">{courses.details}</p>
           <p className="text-gray-600 mb-4">Total Day: {courses.day} day</p>
-          <div className="flex justify-between py-2 ">
+          <div className="flex justify-between py-2  ">
           <Link to={`/courses/${courses.id}`}
              onClick={handleVeiwDetails}
             className="bg-blue-500 text-white px-4 flex items-center rounded hover:bg-blue-600 transition">

@@ -15,7 +15,7 @@ const OfflineCourseCard = ({courses}) => {
 
   return (
     <div className=" ">
-    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 pt-20 px-6 ">
+    <div className="grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-3 gap-6 pt-20 px-6 ">
       {courses.map((course, index) => (
         <div
           key={index}
