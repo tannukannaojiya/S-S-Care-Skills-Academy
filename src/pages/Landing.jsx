@@ -15,10 +15,11 @@ return {products};
 }
 const Landing = () => {
   return (
-    <div className='-mt-5'>
+    <div className='-mt-5 overflow-hidden'>
+      
       <HeadHeroSection/>
       <Element name="services">
-        <Services />
+      <Services />
       </Element>
       <HomePage/>
       <WhoWeAre/>

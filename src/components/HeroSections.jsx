@@ -10,7 +10,7 @@ const HeroSection = () => {
   ];
 
   return (
-    <section className="flex flex-col items-center justify-center bg-gray-100 py-12">
+    <section className="flex flex-col items-center justify-center bg-gray-100 py-12 xs:overflow-x-auto">
       <h1 className="text-4xl font-bold text-gray-800 mb-8 text-center">
         Our Affiliations
 

@@ -97,27 +97,27 @@ const Login = () => {
       <Form
         onSubmit={handleLogin}
         method='post'
-        className='card w-96 p-8 bg-base-100 shadow-lg flex flex-col gap-y-4'
+        className='card w-96 p-8 bg-base-100 shadow-lg flex flex-col gap-y-4 xs:w-60'
       >
         <h4 className='text-center text-3xl font-bold'>Login</h4>
         <FormInput
           type='email'
-          label='email'
+          label='Email'
           name='identifier'
-          defaultValue='test@test.com'
+         
           value={email}
           onChange={(e) => setEmail(e.target.value)}
         />
         <FormInput
           type='password'
-          label='password'
+          label='Password'
           name='password'
-          defaultValue='secret'
+          
           value={password}
           onChange={(e) => setPassword(e.target.value)}
         />
-        <div className='mt-4'>
-          <SubmitBtn type="submit" value="Login" />
+        <div className=''>
+          <SubmitBtn type="submit" value="Login" className="text-uppercase" />
         </div>
         <p className='text-center'>
           Not a member yet?

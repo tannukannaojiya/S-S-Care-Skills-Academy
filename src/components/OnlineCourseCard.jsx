@@ -1,5 +1,5 @@
 import { useNavigate, Link, useParams } from "react-router-dom";
-import { courseOnlineData } from "../utils/courseOnlineData";
+// import { courseOnlineData } from "../utils/courseOnlineData";
 const OnlineCourseCards = ({ coursesListCart,courses }) => {
   const navigate = useNavigate();
   const handleVeiwDetails= () => {
@@ -14,7 +14,7 @@ const OnlineCourseCards = ({ coursesListCart,courses }) => {
 
   return (
     <div className=" ">
-    <div className="grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-3 gap-6 pt-20 px-6 ">
+    <div className="grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-3 gap-6 pt-20 px-6  ">
       {courses.map((course, index) => (
         <div
           key={index}

@@ -3,7 +3,7 @@ import React from "react";
 const ContactUs = () => {
   return (
     <>
-      <section className="relative z-10 overflow-hidden bg-white py-20 px-10 dark:bg-dark lg:py-[120px]">
+      <section className="relative z-10 overflow-hidden bg-white py-20 px-10 dark:bg-dark lg:py-[120px] xs:px-3">
         <div className="container">
           <div className="-mx-4 flex flex-wrap lg:justify-between">
             <div className="w-full px-4 lg:w-1/2 xl:w-6/12">
@@ -962,9 +962,9 @@ const ContactUs = () => {
         </div>
       </section>
       <br/>
-      <div className="flex flex-col items-center">
-      <h2 className="text-2xl font-bold mb-4 text-gray-800">Our Location</h2>
-      <div className="w-full max-w-4xl aspect-video">
+      <div className="flex flex-col items-center xs:px-4">
+      <h2 className="text-3xl font-bold mb-4 text-gray-800">Our Location</h2>
+      <div className="w-full max-w-4xl px-5 aspect-video">
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7211.779933970442!2d77.30996052281527!3d28.592654806362326!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce4f0c5555555%3A0xda9a35a127575364!2sDigital%20SVC%20India%20Private%20lImited!5e0!3m2!1sen!2szw!4v1693587970735!5m2!1sen!2szw"
           width="100%"

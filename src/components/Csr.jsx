@@ -3,14 +3,14 @@ import csr3 from '../assets/csr3.png';
 
 const Csr = () => {
   return (
-    <div className="bg-gray-100 overflow-x-hidden  min-h-screen max-w-full flex items-center justify-center p-2">
-      <div className="bg-white m-5 rounded-lg shadow-lg w-full max-w-full flex flex-col md:flex-row">
+    <div className="bg-gray-100 overflow-x-hidden min-h-screen max-w-full flex items-center justify-center p-2">
+      <div className="bg-white m-5 rounded-lg shadow-lg w-full max-w-full flex flex-col md:flex-row ">
         {/* Left Side - Image */}
-        <div className="w-full my-10 md:w-1/2">
+        <div className="w-full my-5 md:w-1/2">
           <img
             src={csr3}
             alt="CSR Initiative"
-            className="w-full h-full pl-5 rounded-t-lg md:rounded-l-lg md:rounded-t-none"
+            className="w-full h-full pl-5 rounded-t-lg md:rounded-l-lg md:rounded-t-none sm:px-4 xs:px-4"
           />
         </div>
         {/* Right Side - Content */}

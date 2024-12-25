@@ -27,7 +27,7 @@ const ResponsiveForm = () => {
   };
 
   return (
-    <div className="flex justify-center items-center h-full py-10 px-30 bg-gray-100">
+    <div className="flex justify-center items-center h-full py-5 px-30 bg-gray-100 xs:px-5">
       <form
         onSubmit={handleSubmit}
         className="w-full  max-w-lg p-6 bg-white rounded-lg shadow-lg"

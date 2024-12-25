@@ -6,7 +6,7 @@ export default {
   ],
   theme: {
     screens: {
-      'sm': '567px',
+      'sm': '640px',
       // => @media (min-width: 640px) { ... }
 
       'md': '768px',
@@ -21,7 +21,11 @@ export default {
       '2xl': '1536px',
       // => @media (min-width: 1536px) { ... }
     },
-    extend: {},
+    extend: {
+      screens:{
+        'xs':{'min':"320px", 'max':'567px'},
+      }
+    },
   },
   plugins: [require("@tailwindcss/typography"), require("daisyui")],
   daisyui: {

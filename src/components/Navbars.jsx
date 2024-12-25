@@ -1,8 +1,6 @@
 import React, { useState } from 'react';
-import { Link as LinkScroll } from 'react-scroll';
 import { Link, NavLink } from 'react-router-dom';
 import { BsCart3 } from 'react-icons/bs';
-// import { BsMoonFill, BsSunFill } from 'react-icons/bs';
 import AcademyLogo from '../assets/AcademyLogo.png';
 
 const Navbars = () => {
@@ -11,10 +9,10 @@ const Navbars = () => {
   return (
     <header className="bg-neutral text-neutral-content shadow-md">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 2xl:space-x-2">
-        <div className="flex justify-between items-center h-16">
+        <div className="flex justify-between items-center cursor-pointer h-16">
           {/* Logo Section */}
-          <div className="flex items-center sm: ">
-            <Link to="/" className="flex items-center cursor-pointer sm:pr-2">
+          <div className="flex items-center">
+            <Link to="/" className="flex items-center cursor-pointer sm:pr-2 ">
               <img src={AcademyLogo} alt="Academy Logo" className="h-14 w-14 lg:h-12 lg:w-12 md:h-11 md:w-11" />
             </Link>
           </div>
@@ -27,9 +25,7 @@ const Navbars = () => {
             <Link to="/about" className="hover:text-blue-400 transition duration-300">
               About
             </Link>
-            {/* <LinkScroll to="courses" smooth={true} duration={500} className="hover:text-blue-400 transition duration-300">
-              Courses
-            </LinkScroll> */}
+            
             <Link to="/offlineCourses" className="hover:text-blue-400 transition duration-300">Courses</Link>
     
             <Link to="/onlineCourse" className="hover:text-blue-400 transition duration-300">
@@ -63,19 +59,19 @@ const Navbars = () => {
             >
               Sign Up
             </Link>
-            <NavLink to="/cart" className="btn btn-ghost btn-circle">
+          </div>
+
+          {/* Mobile Menu Button */}
+          <NavLink to="/cart" className="btn btn-ghost btn-circle xs:pl-24">
               <div className="indicator">
                 <BsCart3 className="h-6 w-6" />
                 <span className="badge badge-sm badge-primary indicator-item">0</span>
               </div>
             </NavLink>
-          </div>
-
-          {/* Mobile Menu Button */}
           <div className="md:hidden">
             <button
               onClick={() => setIsMobileOpen(!isMobileOpen)}
-              className="p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700"
+              className="p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 "
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -84,6 +80,7 @@ const Navbars = () => {
                 stroke="currentColor"
                 className="h-6 w-6"
               >
+               
                 {isMobileOpen ? (
                   <path
                     strokeLinecap="round"
@@ -124,10 +121,10 @@ const Navbars = () => {
           <Link to="/careerPage" className="block hover:text-blue-400">
             Careers
           </Link>
-          <Link to="/contact" className="block hover:text-blue-400">
+          <Link to="/contactUs" className="block hover:text-blue-400">
             Contact Us
           </Link>
-          <Link to="/partner" className="block hover:text-blue-400">
+          <Link to="/becomePartner" className="block hover:text-blue-400">
             Partner With Us
           </Link>
           <div className="flex space-x-4 mt-4 md:space-x-2 md:px-2 sm:hidden">

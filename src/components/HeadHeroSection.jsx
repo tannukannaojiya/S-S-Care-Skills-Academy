@@ -21,7 +21,7 @@ const HeadHeroSection = () => {
   }, []);
 
   return (
-    <div className="relative w-full h-screen overflow-hidden">
+    <div className="relative w-full h-screen overflow-hidden object-cover xs:h-60">
       {/* Images */}
       {images.map((image, index) => (
         <img
@@ -41,7 +41,7 @@ const HeadHeroSection = () => {
 
       {/* Overlay */}
       <div className="absolute inset-0 bg-black bg-opacity-30 flex items-center justify-center">
-        <h1 className="text-white text-4xl md:text-6xl font-bold text-center px-4 object-cover text-xs text-sm text-lg">
+        <h1 className="text-white text-4xl md:text-6xl font-bold text-center px-4 object-cover xs:font-normal xs:text-2xl">
           Welcome To S & S Care Skills Academy
         </h1>
       </div>

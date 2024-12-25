@@ -7,7 +7,7 @@ const OfflineHomePage = () => {
   const [selectedCategory, setSelectedCategory] = useState("RACW/HVAC");
 
   return (
-    <div className="bg-gray-100 min-h-screen py-10">
+    <div className="bg-gray-100 min-h-screen py-10 overflow-hidden">
       <Navbar setSelectedCategory={setSelectedCategory} />
       <OfflineCourseCard courses={courseOfflineData[selectedCategory] || []} />
     </div>

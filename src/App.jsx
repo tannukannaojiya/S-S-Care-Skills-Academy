@@ -9,6 +9,7 @@ import CarrerPage from './components/CarrerPage';
 import OnlineCourse from './pages/OnlineCourse';
 import OfflineCourse from './pages/OfflineCourse';
 import { ToastContainer } from 'react-toastify';
+import './App.css';
 
 const router = createBrowserRouter([
   {

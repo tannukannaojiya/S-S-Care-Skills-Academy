@@ -70,10 +70,10 @@ const TeamCard = ({ image, name, profile, details }) => {
 
 const About = () => {
   return (
-    <div className="bg-gray-100 min-h-screen w-full overflow-x-hidden py-10">
-      <div className="flex flex-col items-center px-4">
+    <div className="bg-gray-100 min-h-screen w-full overflow-x-hidden py-5">
+      <div className="flex flex-col items-center px-4 ">
         <h1 className="text-4xl font-bold text-gray-800 mb-8">About Us</h1>
-        <p className="text-gray-700 text-center max-w-4xl mb-8 leading-relaxed">
+        <p className="text-gray-700  max-w-4xl mb-8 leading-relaxed text-justify xs:px-2">
           S&S Care Skills Academy (P) Ltd. was established in 2014 to impart
           skills to the employable youth of India for a better future. S&S Care
           Skills Academy is committed to creating a skilled workforce in India.
@@ -85,7 +85,7 @@ const About = () => {
           In our mission of skill development, we provide paid training, run
           various CSR activities, and conduct corporate training.
         </p>
-        <div className="flex flex-col sm:flex-row justify-center items-center sm:space-x-6">
+        <div className="flex flex-col justify-center items-center text-justify sm:flex-row sm:space-x-6">
           <TeamCard
             image="https://careskillsacademy.in/wp-content/uploads/2023/09/Satyendra_Kumar480x520.webp"
             name="Satyendra Kumar"

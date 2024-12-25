@@ -2,7 +2,7 @@ import React from "react";
 
 const BecomePartner = () => {
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-100 px-4">
+    <div className="h-full flex items-center justify-center bg-gray-100 p-5 ">
       <div className="max-w-2xl w-full bg-white rounded-lg shadow-md p-6">
         <h2 className="text-2xl font-bold text-center mb-6 text-gray-800">
           Interested in S&S Care Skills Partnership
@@ -26,19 +26,6 @@ const BecomePartner = () => {
               placeholder="Enter your email"
               className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
             />
-          </div>
-
-          {/* Types */}
-          <div>
-            <label className="block text-sm font-medium text-gray-700">Type</label>
-            <select
-              className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
-            >
-              <option value="">Select Type</option>
-              <option value="type1">Type 1</option>
-              <option value="type2">Type 2</option>
-              <option value="type3">Type 3</option>
-            </select>
           </div>
 
           {/* Pin Code */}

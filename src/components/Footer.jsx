@@ -72,7 +72,7 @@ const Footer = () => {
 
      {/* Footer Bottom */}
      <div className="text-center">
-     <div className="bg-gray-900 pt-5 text-gray-500 text-sm h-14">
+     <div className="bg-gray-900 pt-5 text-gray-500 text-sm h-16 xs:px-4">
      © {new Date().getFullYear()} S&S Care Skills Academy. All rights reserved.
    </div>
    </div>

@@ -13,9 +13,9 @@ const Navbar = ({ setSelectedCategory }) => {
 
   return (
     <div className="flex justify-center">
-    <div className="bg-neutral-800 w-2/5 flex justify-center text-white py-4  md:w-2/3 sm:w-auto">
+    <div className="bg-neutral-800 w-2/5 flex justify-center text-white py-4 md:w-2/3 sm:w-auto xs:w-72">
       <div className="rounded-lg">
-        <nav className="flex justify-center font-semibold uppercase text-sm md:text-sm ">
+        <nav className="flex justify-center font-semibold uppercase text-sm md:text-sm xs:grid xs:grid-cols-2 ">
           {menus.map((menu, index) => (
             <div
               key={index}
