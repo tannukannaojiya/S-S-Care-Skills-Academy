@@ -1,7 +1,30 @@
 import React from 'react';
+import { useEffect } from 'react';
 import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin, FaYoutube } from 'react-icons/fa';
+import {Link} from 'react-router-dom';
 
+import {Events, scroll, scrollSpy} from 'react-scroll';
 const Footer = () => {
+  // useEffect is used to perform side effects in functional components.
+  // Here, it's used to register scroll events and update scrollSpy when the component mounts.
+  useEffect(() => {    
+    // Registering the 'end' event and logging it to the console when triggered.
+    Events.scrollEvent.register('begin', (to, element) => {
+      console.log('begin', to, element);
+    });
+
+    // Updating scrollSpy when the component mounts.
+    scrollSpy.update();
+
+    return () => {
+      Events.scrollEvent.remove('begin');
+    };
+  }, []);
+
+  const scrollToTop = () => {
+    scroll.scrollToTop();
+  };
+
   return (
     <>
     <footer className="bg-gray-800 text-gray-200 py-10 px-4 md:px-20 sm:px-20">
@@ -33,15 +56,15 @@ const Footer = () => {
         {/* Useful Links Section */}
         <div>
           <h2 className="text-xl font-semibold mb-4">Useful Links</h2>
-          <ul className="space-y-2">
-            <li className='cursor-pointer'>Home</li>
-            <li className='cursor-pointer'>About Us</li>
-            <li className='cursor-pointer'>Courses</li>
-            <li className='cursor-pointer'>Online Courses</li>
-            <li className='cursor-pointer'>CSR</li>
-            <li className='cursor-pointer'>Carrers</li>
-            <li className='cursor-pointer'>Contact Us</li>
-            <li className='cursor-pointer'>Partner With Us</li>
+          <ul className="space-y-2 grid grid-cols-1">
+            <Link to="/" className='cursor-pointer'>Home</Link>
+            <Link to="/about" className='cursor-pointer' onClick={scrollToTop}>About Us</Link>
+            <Link to="/offlineCourses" className='cursor-pointer' onClick={scrollToTop}>Courses</Link>
+            <Link to="/onlineCourse" className='cursor-pointer' onClick={scrollToTop}>Online Courses</Link>
+            <Link to="/csr" className='cursor-pointer' onClick={scrollToTop}>CSR</Link>
+            <Link to="/careerPage" className='cursor-pointer' onClick={scrollToTop}>Carrers</Link>
+            <Link to="/contactUs" className='cursor-pointer' onClick={scrollToTop}>Contact Us</Link>
+            <Link to="/becomePartner" className='cursor-pointer' onClick={scrollToTop}>Partner With Us</Link>
           </ul>
         </div>
 

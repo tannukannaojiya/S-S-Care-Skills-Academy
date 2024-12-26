@@ -1,9 +1,9 @@
 export const services = [
-    { name: 'RACW Training', description: 'Training in Robotics and Computer Vision.' },
-    { name: 'Automobile Training', description: 'Hands-on experience with automobile technology.' },
-    { name: 'Robotics Training', description: 'Learn the fundamentals of robotics engineering.' },
-    { name: 'Educational and Physical', description: 'Programs to enhance both educational and physical growth.' },
-    { name: 'Corporate Training', description: 'Develop skills for corporate success and leadership.' },
-    { name: 'Career Counseling', description: 'Guidance to help you choose the right career path.' },
+    { name: 'RACW Training', description: 'RACW training courses are available through the National Skill Development Corporation (NSDC)in India. These courses are part of the Electronics Sector Skills Council and are designed to train field engineers in managing after-sales services for consumer electronics.' },
+    { name: 'Automobile Training', description: 'Hands-on experience with automobile technology. We specializes in automotive electronics, offering courses like ECM/ECU Training, Car Scanning & Diagnosis, and Auto Electrical Systems. We are well-regarded for their focus on upskilling professionals in the latest automobile technologies' },
+    { name: 'Robotics Training', description: 'Learn the fundamentals of robotics engineering. Our institute offers multi-level robotics courses, focusing on emerging technologies like embedded systems, IoT,and artificial intelligence. Their training is handson, designed for both children and adults, and includes the creation of apps and games for robotics control​' },
+    { name: 'Educational and Physical', description: 'Programs to enhance both educational and physical growth. These programs focus on both personal and professional development, offering training in areas such as physical health, safety, and continuing education.'},
+    { name: 'Corporate Training', description: 'Develop skills for corporate success and leadership. Innovative methods for employee development, such as PCB Repair training, Scanning or Electric training.' },
+    { name: 'Career Counseling', description: 'Guidance to help you choose the right career path. Academy have dedicated placement cells or departments that focus on connecting graduates to local industries. These Academy are particularly effective at placing individuals in trades such as AC repairing, automobile repair, and electrical work.' },
   ];
   

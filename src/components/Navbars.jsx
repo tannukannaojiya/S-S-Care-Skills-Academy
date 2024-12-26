@@ -7,9 +7,9 @@ const Navbars = () => {
   const [isMobileOpen, setIsMobileOpen] = useState(false);
 
   return (
-    <header className="bg-neutral text-neutral-content shadow-md">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8 2xl:space-x-2">
-        <div className="flex justify-between items-center cursor-pointer h-16">
+    <header className="bg-neutral text-neutral-content shadow-md ">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 2xl:space-x-2 h-full w-full ">
+        <div className="flex justify-between items-center cursor-pointer ">
           {/* Logo Section */}
           <div className="flex items-center">
             <Link to="/" className="flex items-center cursor-pointer sm:pr-2 ">
@@ -62,16 +62,16 @@ const Navbars = () => {
           </div>
 
           {/* Mobile Menu Button */}
-          <NavLink to="/cart" className="btn btn-ghost btn-circle xs:pl-24">
+          <NavLink to="/cart" className="btn btn-ghost btn-circle xs:pl-20">
               <div className="indicator">
                 <BsCart3 className="h-6 w-6" />
                 <span className="badge badge-sm badge-primary indicator-item">0</span>
               </div>
             </NavLink>
-          <div className="md:hidden">
+          <div className="md:hidden xs:pr-90">
             <button
               onClick={() => setIsMobileOpen(!isMobileOpen)}
-              className="p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 "
+              className="py-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 "
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
