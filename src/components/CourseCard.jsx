@@ -24,7 +24,7 @@ const CourseCards = ({courses }) => {
             <div className="h-28 w-28  "><img className="rounded-full" src={courses.img} alt="logo"/></div>
           <div className="text-2xl mt-0 font-semibold mb-2 line-clamp-1 ">{courses.name}</div>
           <p className="text-gray-600 mb-2 ">{courses.details}</p>
-          <p className="text-gray-600 mb-4">Total Day: {courses.day} day</p>
+          <p className="text-gray-600 mb-4">Total Day: {courses.day}</p>
           <div className="flex justify-between py-2  ">
           <Link to={`/courses/${courses.id}`}
              onClick={handleVeiwDetails}

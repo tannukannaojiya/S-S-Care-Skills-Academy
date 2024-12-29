@@ -31,7 +31,7 @@ const OfflineCourse = (cart) => {
     {/* Course Details */}
     <div className="p-4 w-full md:w-1/2">
       <h2 className="text-lg font-semibold text-gray-800">{course.name}</h2>
-      <p className="text-gray-600 mt-2">Fee: ₹{course.Price}</p>
+      <p className="text-gray-600 mt-2">Fee: ₹{course.Price}/-</p>
 
       {/* Features */}
       <ul className="mt-4 text-sm text-gray-600 space-y-2">

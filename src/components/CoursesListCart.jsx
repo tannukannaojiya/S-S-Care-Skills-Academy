@@ -92,3 +92,7 @@ const CoursesListCart = () => {
 };
 
 export default CoursesListCart;
+
+
+
+

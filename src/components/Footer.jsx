@@ -1,12 +1,12 @@
 import React from 'react';
 import { useEffect } from 'react';
 import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin, FaYoutube } from 'react-icons/fa';
-import {Link} from 'react-router-dom';
+import {Link, useLocation } from 'react-router-dom';
 
-import {Events, scroll, scrollSpy} from 'react-scroll';
+import { Events, scroll, scrollSpy} from 'react-scroll';
 const Footer = () => {
-  // useEffect is used to perform side effects in functional components.
-  // Here, it's used to register scroll events and update scrollSpy when the component mounts.
+  const location = useLocation();
+  
   useEffect(() => {    
     // Registering the 'end' event and logging it to the console when triggered.
     Events.scrollEvent.register('begin', (to, element) => {
@@ -23,6 +23,15 @@ const Footer = () => {
 
   const scrollToTop = () => {
     scroll.scrollToTop();
+  };
+  const handleScrollLinkClick = (sectionId) => {
+    // If on the same page, scroll to section
+    if (location.pathname === '/') {
+      scroll.scrollTo(sectionId);
+    } else {
+      // Otherwise, navigate to the home page first
+      window.location.href = `/#${sectionId}`;
+    }
   };
 
   return (
@@ -58,7 +67,7 @@ const Footer = () => {
           <h2 className="text-xl font-semibold mb-4">Useful Links</h2>
           <ul className="space-y-2 grid grid-cols-1">
             <Link to="/" className='cursor-pointer'>Home</Link>
-            <Link to="/about" className='cursor-pointer' onClick={scrollToTop}>About Us</Link>
+            <Link to="https://careskillsacademy.in/about" className='cursor-pointer' onClick={scrollToTop}>About Us</Link>
             <Link to="/offlineCourses" className='cursor-pointer' onClick={scrollToTop}>Courses</Link>
             <Link to="/onlineCourse" className='cursor-pointer' onClick={scrollToTop}>Online Courses</Link>
             <Link to="/csr" className='cursor-pointer' onClick={scrollToTop}>CSR</Link>
